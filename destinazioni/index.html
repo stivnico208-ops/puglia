@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<!-- ===== INIZIO INTESTAZIONE DI METADATI (HEAD) ===== -->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Destinazioni in Puglia — Esplora le 6 Province | Puglia Turismo</title>
+  <meta name="description"
+    content="Scopri tutte le destinazioni della Puglia: Gargano, Bari, BAT, Taranto, Brindisi e Salento. Guida completa alle 6 province pugliesi.">
+  <meta property="og:title" content="Destinazioni in Puglia — Esplora le 6 Province | Puglia Turismo">
+  <meta property="og:description"
+    content="Scopri tutte le destinazioni della Puglia: Gargano, Bari, BAT, Taranto, Brindisi e Salento. Guida completa alle 6 province pugliesi.">
+  <meta property="og:type" content="website">
+  <link rel="canonical" href="https://example.com/destinazioni/">
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <link rel="stylesheet" href="../assets/css/components.css">
+  <link rel="icon" href="../../favicon.png" type="image/png">
+</head>
+
+<!-- ===== CORPO DELLA PAGINA (BODY) ===== -->
+
+<body>
+
+  <!-- ===== AGGANCIO LOGICA MENU MOBILE (CHECKBOX HIDDEN PER TOGGLE) ===== -->
+  <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-hidden="true">
+
+  <!-- ===== HEADER ===== -->
+  <!-- ===== INTESTAZIONE SITO E NAVIGAZIONE PRINCIPALE (HEADER) ===== -->
+  <header class="site-header" id="site-header" aria-label="Intestazione sito">
+    <div class="container">
+      <a href="../index.html" class="site-logo" aria-label="Puglia Turismo — Torna alla homepage">Puglia</a>
+      <nav class="site-nav" aria-label="Navigazione principale">
+        <ul class="site-nav__list" role="list">
+          <li><a href="../destinazioni/index.html" class="site-nav__link site-nav__link--active">Destinazioni</a></li>
+          <li><a href="../esperienze/index.html" class="site-nav__link">Esperienze</a></li>
+          <li><a href="../pianifica/index.html" class="site-nav__link">Pianifica</a></li>
+          <li><a href="../contatti/index.html" class="site-nav__link">Contatti</a></li>
+        </ul>
+      </nav>
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Apri/chiudi menu di navigazione">
+        <span></span><span></span><span></span>
+      </label>
+    </div>
+  </header>
+
+  <!-- ===== NAVIGAZIONE COLLASSABILE PER DISPOSITIVI MOBILE (MOBILE NAV OVERLAY) ===== -->
+  <nav class="mobile-nav" aria-label="Menu mobile">
+    <ul class="mobile-nav__list" role="list">
+      <li><a href="../destinazioni/index.html" class="mobile-nav__link">Destinazioni</a></li>
+      <li><a href="../esperienze/index.html" class="mobile-nav__link">Esperienze</a></li>
+      <li><a href="../pianifica/index.html" class="mobile-nav__link">Pianifica</a></li>
+      <li><a href="../contatti/index.html" class="mobile-nav__link">Contatti</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===== CONTENUTO PRINCIPALE DELLA PAGINA (MAIN CONTENT) ===== -->
+  <main id="main-content">
+
+    <!-- ===== HERO PAGINA ===== -->
+    <!-- ===== COPERTINA DI BENVENUTO / SEZIONE INIZIALE (HERO) ===== -->
+    <section class="hero hero--page" aria-labelledby="page-title">
+      <div class="hero__overlay"></div>
+      <div class="hero__content">
+        <div class="container">
+
+          <h1 class="hero__title" id="page-title">Destinazioni in Puglia</h1>
+        </div>
+      </div>
+      </div>
+      </div>
+    </section>
+
+    <!-- ===== INTRO ===== -->
+    <section class="section section--sm">
+      <div class="container">
+        <p class="page-intro">La Puglia è suddivisa in sei province: Foggia con il Gargano, Bari capoluogo regionale,
+          BAT-Barletta-Andria-Trani, Taranto, Brindisi e Lecce con il Salento. Ogni area ha carattere, paesaggi e sapori
+          del tutto propri: dalla costa adriatica con le sue scogliere bianche fino alla costa ionica con le sue acque
+          caraibiche, dall'entroterra della Murgia ai borghi dell'ulivo.</p>
+      </div>
+    </section>
+
+    <!-- ===== GRIGLIA DESTINAZIONI ===== -->
+    <section class="section section--alt" aria-labelledby="dest-grid-title">
+      <div class="container">
+        <header class="section__header">
+          <h2 class="section__title" id="dest-grid-title">Scegli la tua area</h2>
+          <div class="divider" aria-hidden="true"></div>
+        </header>
+        <div class="tabs">
+          <input type="radio" name="tab-dest" id="tab-tutte" class="tabs__input" checked>
+          <input type="radio" name="tab-dest" id="tab-nord" class="tabs__input">
+          <input type="radio" name="tab-dest" id="tab-centro" class="tabs__input">
+          <input type="radio" name="tab-dest" id="tab-sud" class="tabs__input">
+
+          <div class="tabs__nav" style="margin-bottom: var(--space-6);">
+            <label for="tab-tutte" class="tabs__label">Tutte</label>
+            <label for="tab-nord" class="tabs__label">Nord</label>
+            <label for="tab-centro" class="tabs__label">Centro</label>
+            <label for="tab-sud" class="tabs__label">Sud</label>
+          </div>
+
+          <div class="tabs__panels">
+            <div class="areas-grid slider-track">
+
+              <!-- Gargano e Foggia -->
+              <article class="area-card" data-area="nord">
+                <div class="area-card__img">
+                  <img src="../assets/img/gargano/gargano-bg.jpg"
+                    alt="Faraglioni bianchi della Baia delle Zagare sul Gargano" width="800" height="600"
+                    loading="lazy">
+                </div>
+                <div class="area-card__body">
+                  <h3 class="area-card__title">Gargano e Foggia</h3>
+                  <p class="area-card__desc">Lo sperone d'Italia tra scogliere bianche, Foresta Umbra e le mistiche
+                    Isole
+                    Tremiti.</p>
+                  <ul class="area-card__places" aria-label="Luoghi simbolo">
+                    <li>Vieste</li>
+                    <li>Monte Sant'Angelo (UNESCO)</li>
+                    <li>Isole Tremiti</li>
+                  </ul>
+                  <a href="../destinazioni/gargano/index.html" class="area-card__link">Esplora l'area →</a>
+                </div>
+              </article>
+
+              <!-- Bari e Città Metropolitana -->
+              <article class="area-card" data-area="centro">
+                <div class="area-card__img">
+                  <img src="../assets/img/bari/bari-bg.jpg" alt="Trulli di Alberobello illuminati al tramonto"
+                    width="800" height="600" loading="lazy">
+                </div>
+                <div class="area-card__body">
+                  <h3 class="area-card__title">Bari e Città Metropolitana</h3>
+                  <p class="area-card__desc">Il cuore pulsante della Puglia: trulli, grotte di Castellana, Polignano a
+                    Mare
+                    e la focaccia barese.</p>
+                  <ul class="area-card__places" aria-label="Luoghi simbolo">
+                    <li>Alberobello (UNESCO)</li>
+                    <li>Grotte di Castellana</li>
+                    <li>Polignano a Mare</li>
+                  </ul>
+                  <a href="../destinazioni/bari/index.html" class="area-card__link">Esplora l'area →</a>
+                </div>
+              </article>
+
+              <!-- BAT -->
+              <article class="area-card" data-area="nord">
+                <div class="area-card__img">
+                  <img src="../assets/img/bat/bat-bg.jpg" alt="Castel del Monte di Federico II nella campagna pugliese"
+                    width="800" height="600" loading="lazy">
+                </div>
+                <div class="area-card__body">
+                  <h3 class="area-card__title">BAT — Barletta-Andria-Trani</h3>
+                  <p class="area-card__desc">Castel del Monte, la Burrata di Andria e la Cattedrale di Trani sul mare.
+                  </p>
+                  <ul class="area-card__places" aria-label="Luoghi simbolo">
+                    <li>Castel del Monte (UNESCO)</li>
+                    <li>Trani</li>
+                    <li>Barletta (Disfida)</li>
+                  </ul>
+                  <a href="../destinazioni/bat/index.html" class="area-card__link">Esplora l'area →</a>
+                </div>
+              </article>
+
+              <!-- Taranto -->
+              <article class="area-card" data-area="centro">
+                <div class="area-card__img">
+                  <img src="../assets/img/taranto/taranto-bg.jpg"
+                    alt="Il Ponte Girevole di Taranto tra Mar Piccolo e Mar Grande" width="800" height="600"
+                    loading="lazy">
+                </div>
+                <div class="area-card__body">
+                  <h3 class="area-card__title">Taranto e Costa Ionica</h3>
+                  <p class="area-card__desc">La città dei due mari: Magna Grecia, gravine, ceramica di Grottaglie e le
+                    cozze
+                    del Mar Piccolo.</p>
+                  <ul class="area-card__places" aria-label="Luoghi simbolo">
+                    <li>MaRTA (Museo Nazionale)</li>
+                    <li>Grottaglie (ceramica)</li>
+                    <li>Manduria (Primitivo)</li>
+                  </ul>
+                  <a href="../destinazioni/taranto/index.html" class="area-card__link">Esplora l'area →</a>
+                </div>
+              </article>
+
+              <!-- Brindisi -->
+              <article class="area-card" data-area="sud">
+                <div class="area-card__img">
+                  <img src="../assets/img/brindisi/brindisi-bg.jpg"
+                    alt="Ostuni la Città Bianca vista dall'alto con la cattedrale" width="800" height="600"
+                    loading="lazy">
+                </div>
+                <div class="area-card__body">
+                  <h3 class="area-card__title">Brindisi e Costa Adriatica Sud</h3>
+                  <p class="area-card__desc">Ostuni la Città Bianca, la Riserva di Torre Guaceto, masserie e la Via
+                    Appia
+                    che finisce sul mare.</p>
+                  <ul class="area-card__places" aria-label="Luoghi simbolo">
+                    <li>Ostuni (Città Bianca)</li>
+                    <li>Torre Guaceto</li>
+                    <li>Fasano (Egnazia)</li>
+                  </ul>
+                  <a href="../destinazioni/brindisi/index.html" class="area-card__link">Esplora l'area →</a>
+                </div>
+              </article>
+
+              <!-- Salento -->
+              <article class="area-card">
+                <div class="area-card__img">
+                  <img src="../assets/img/salento/salento-bg.jpg"
+                    alt="Le acque turchesi e i faraglioni di Torre dell'Orso nel Salento" width="800" height="600"
+                    loading="lazy">
+                </div>
+                <div class="area-card__body">
+                  <h3 class="area-card__title">Salento — Lecce e dintorni</h3>
+                  <p class="area-card__desc">Il barocco leccese, le Maldive del Salento, la Notte della Taranta e due
+                    mari
+                    da vivere.</p>
+                  <ul class="area-card__places" aria-label="Luoghi simbolo">
+                    <li>Lecce (barocco)</li>
+                    <li>Gallipoli</li>
+                    <li>Otranto (Cattedrale UNESCO)</li>
+                  </ul>
+                  <a href="../destinazioni/salento/index.html" class="area-card__link">Esplora l'area →</a>
+                </div>
+              </article>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <!-- ===== PIÈ DI PAGINA CON LINK DI NAVIGAZIONE E INFORMAZIONI GENERALI (FOOTER) ===== -->
+  <footer class="site-footer" aria-label="Piè di pagina">
+    <div class="container">
+      <div class="site-footer__grid">
+        <div class="site-footer__col">
+          <h2 class="site-footer__col-title">Link rapidi</h2>
+          <ul class="site-footer__list" role="list">
+            <li><a href="../destinazioni/index.html" class="site-footer__link">Destinazioni</a></li>
+            <li><a href="../esperienze/index.html" class="site-footer__link">Esperienze</a></li>
+            <li><a href="../pianifica/index.html" class="site-footer__link">Pianifica</a></li>
+            <li><a href="../contatti/index.html" class="site-footer__link">Contatti</a></li>
+          </ul>
+        </div>
+        <div class="site-footer__col">
+          <h2 class="site-footer__col-title">Informazioni</h2>
+          <ul class="site-footer__list" role="list">
+            <li><a href="../contatti/index.html" class="site-footer__link">Contatti</a></li>
+            <li><a href="../contatti/index.html" class="site-footer__link">Accessibilità</a></li>
+            <li><a href="../contatti/index.html" class="site-footer__link">Turismo sostenibile</a></li>
+            <li><a href="../contatti/index.html" class="site-footer__link">Sitemap</a></li>
+          </ul>
+        </div>
+        <div class="site-footer__col">
+          <h2 class="site-footer__col-title">Aree geografiche</h2>
+          <ul class="site-footer__list" role="list">
+            <li><a href="../destinazioni/gargano/index.html" class="site-footer__link">Gargano</a></li>
+            <li><a href="../destinazioni/bari/index.html" class="site-footer__link">Bari</a></li>
+            <li><a href="../destinazioni/bat/index.html" class="site-footer__link">BAT</a></li>
+            <li><a href="../destinazioni/taranto/index.html" class="site-footer__link">Taranto</a></li>
+            <li><a href="../destinazioni/brindisi/index.html" class="site-footer__link">Brindisi</a></li>
+            <li><a href="../destinazioni/salento/index.html" class="site-footer__link">Salento</a></li>
+          </ul>
+        </div>
+        <div class="site-footer__col">
+          <a href="../index.html" class="site-footer__logo" aria-label="Torna alla homepage">Puglia</a>
+          <p class="site-footer__tagline">Puglia. Dove il Sud diventa leggenda.</p>
+        </div>
+      </div>
+      <div class="site-footer__bottom">
+        <p>© 2025–2026 Vivere la Puglia.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== CARICAMENTO DELLO SCRIPT COMPORTAMENTALE DEL CAROSELLO (JAVASCRIPT SLIDER) ===== -->
+  <script src="../assets/js/slider.js"></script>
+</body>
+
+</html>

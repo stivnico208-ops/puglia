@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<!-- ===== INIZIO INTESTAZIONE DI METADATI (HEAD) ===== -->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Puglia Turismo — Scopri la Regione più Autentica del Mediterraneo</title>
+  <meta name="description"
+    content="Scopri la Puglia: mare cristallino, borghi storici, gastronomia unica e siti UNESCO. Guida turistica ufficiale per viaggiare in Puglia.">
+  <meta property="og:title" content="Puglia Turismo — Scopri la Regione più Autentica del Mediterraneo">
+  <meta property="og:description"
+    content="Scopri la Puglia: mare cristallino, borghi storici, gastronomia unica e siti UNESCO. Guida turistica ufficiale per viaggiare in Puglia.">
+  <meta property="og:type" content="website">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <link rel="canonical" href="https://example.com/">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="icon" href="favicon.png?v=99" type="image/png">
+
+</head>
+
+<!-- ===== CORPO DELLA PAGINA (BODY) ===== -->
+
+<body>
+
+  <!-- Checkbox per menu mobile -->
+  <!-- ===== AGGANCIO LOGICA MENU MOBILE (CHECKBOX HIDDEN PER TOGGLE) ===== -->
+  <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-hidden="true">
+
+  <!-- ===== HEADER ===== -->
+  <header class="site-header site-header--transparent" id="site-header" aria-label="Intestazione sito">
+    <div class="container">
+      <a href="index.html" class="site-logo" aria-label="Puglia Turismo — Torna alla homepage">Puglia</a>
+      <nav class="site-nav" aria-label="Navigazione principale">
+        <ul class="site-nav__list" role="list">
+          <li><a href="destinazioni/index.html" class="site-nav__link">Destinazioni</a></li>
+          <li><a href="esperienze/index.html" class="site-nav__link">Esperienze</a></li>
+          <li><a href="pianifica/index.html" class="site-nav__link">Pianifica</a></li>
+          <li><a href="contatti/index.html" class="site-nav__link">Contatti</a></li>
+        </ul>
+      </nav>
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Apri/chiudi menu di navigazione">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+    </div>
+  </header>
+
+  <!-- Menu mobile overlay -->
+  <!-- ===== NAVIGAZIONE COLLASSABILE PER DISPOSITIVI MOBILE (MOBILE NAV OVERLAY) ===== -->
+  <nav class="mobile-nav" aria-label="Menu mobile">
+    <ul class="mobile-nav__list" role="list">
+      <li><a href="destinazioni/index.html" class="mobile-nav__link">Destinazioni</a></li>
+      <li><a href="esperienze/index.html" class="mobile-nav__link">Esperienze</a></li>
+      <li><a href="pianifica/index.html" class="mobile-nav__link">Pianifica</a></li>
+      <li><a href="contatti/index.html" class="mobile-nav__link">Contatti</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===== CONTENUTO PRINCIPALE DELLA PAGINA (MAIN CONTENT) ===== -->
+  <main id="main-content">
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" aria-labelledby="hero-title">
+      <!-- Inserire percorso immagine -->
+      <img src="assets/img/hero-bg.jpg" alt="Panorama della puglia rurale" width="4349" height="2903" loading="eager"
+        fetchpriority="high" class="hero__img">
+      <div class="hero__overlay"></div>
+      <div class="hero__gradient-decor"></div>
+      <div class="hero__content">
+        <h1 class="hero__title" id="hero-title">Puglia. Dove il Sud diventa leggenda.</h1>
+        <p class="hero__subtitle">Scopri il mare, i borghi, la gastronomia e la storia della regione più autentica del
+          Mediterraneo.</p>
+        <div class="hero__actions">
+          <a href="destinazioni/index.html" class="btn btn--primary">Scopri la tua Puglia</a>
+          <a href="pianifica/index.html" class="btn btn--ghost">Pianifica il viaggio</a>
+        </div>
+        <div class="hero__pills">
+          <a href="esperienze/mare-e-spiagge/index.html" class="pill">
+            <span class="material-symbols-outlined">anchor</span> Mare
+          </a>
+          <a href="esperienze/arte-e-cultura/index.html" class="pill">
+            <span class="material-symbols-outlined">temple_buddhist</span> Cultura
+          </a>
+          <a href="esperienze/gastronomia/index.html" class="pill">
+            <span class="material-symbols-outlined">chef_hat</span> Gastronomia
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== AREE IN EVIDENZA ===== -->
+    <section class="section section--lg" aria-labelledby="aree-title">
+      <div class="container">
+        <header class="section__header">
+          <h2 class="section__title" id="aree-title">Scegli la tua Puglia</h2>
+          <p class="section__subtitle">Sei province, infinite sorprese.</p>
+          <div class="divider" aria-hidden="true"></div>
+        </header>
+        <div class="areas-grid slider-track">
+
+          <!-- Card 1: Gargano e Foggia -->
+          <article class="area-card">
+            <div class="area-card__img">
+              <img src="assets\img\gargano\gargano-bg.jpg" alt="Scogliere bianche del Gargano con mare cristallino"
+                width="800" height="600" loading="lazy">
+            </div>
+            <div class="area-card__body">
+              <h3 class="area-card__title">Gargano e Foggia</h3>
+              <p class="area-card__desc">Lo sperone d'Italia tra scogliere bianche, Foresta Umbra e le mistiche Isole
+                Tremiti.</p>
+              <a href="destinazioni/gargano/index.html" class="area-card__link">Esplora →</a>
+            </div>
+          </article>
+
+          <!-- Card 2: Bari e Città Metropolitana -->
+          <article class="area-card">
+            <div class="area-card__img">
+              <img src="assets\img\bari\bari-bg.jpg" alt="Trulli di Alberobello al tramonto" width="800" height="600"
+                loading="lazy">
+            </div>
+            <div class="area-card__body">
+              <h3 class="area-card__title">Bari e Città Metropolitana</h3>
+              <p class="area-card__desc">Il cuore pulsante della Puglia: trulli, grotte di Castellana, Polignano a Mare
+                e la focaccia barese.</p>
+              <a href="destinazioni/bari/index.html" class="area-card__link">Esplora →</a>
+            </div>
+          </article>
+
+          <!-- Card 3: BAT -->
+          <article class="area-card">
+            <div class="area-card__img">
+              <img src="assets/img/bat/bat-bg.jpg" alt="Castel del Monte di Federico II visto dall'alto" width="800"
+                height="600" loading="lazy">
+            </div>
+            <div class="area-card__body">
+              <h3 class="area-card__title">BAT — Barletta-Andria-Trani</h3>
+              <p class="area-card__desc">Castel del Monte, la Burrata di Andria e la Cattedrale di Trani sul mare.</p>
+              <a href="destinazioni/bat/index.html" class="area-card__link">Esplora →</a>
+            </div>
+          </article>
+
+          <!-- Card 4: Taranto -->
+          <article class="area-card">
+            <div class="area-card__img">
+              <img src="assets/img/taranto/taranto-bg.jpg" alt="Tempio Dorico di Taranto con il mare sullo sfondo"
+                width="800" height="600" loading="lazy">
+            </div>
+            <div class="area-card__body">
+              <h3 class="area-card__title">Taranto e Costa Ionica</h3>
+              <p class="area-card__desc">La città dei due mari: Magna Grecia, gravine, ceramica di Grottaglie e le cozze
+                del Mar Piccolo.</p>
+              <a href="destinazioni/taranto/index.html" class="area-card__link">Esplora →</a>
+            </div>
+          </article>
+
+          <!-- Card 5: Brindisi -->
+          <article class="area-card">
+            <div class="area-card__img">
+              <img src="assets/img/brindisi/brindisi-bg.jpg" alt="Ostuni, la città bianca, vista dal basso" width="800"
+                height="600" loading="lazy">
+            </div>
+            <div class="area-card__body">
+              <h3 class="area-card__title">Brindisi e Costa Adriatica Sud</h3>
+              <p class="area-card__desc">Ostuni la Città Bianca, la Riserva di Torre Guaceto, masserie e la Via Appia
+                che finisce sul mare.</p>
+              <a href="destinazioni/brindisi/index.html" class="area-card__link">Esplora →</a>
+            </div>
+          </article>
+
+          <!-- Card 6: Salento -->
+          <article class="area-card">
+            <div class="area-card__img">
+              <img src="assets/img/salento/salento-bg.jpg"
+                alt="Le Maldive del Salento: sabbia bianca e mare turchese a Pescoluse" width="800" height="600"
+                loading="lazy">
+            </div>
+            <div class="area-card__body">
+              <h3 class="area-card__title">Salento — Lecce e dintorni</h3>
+              <p class="area-card__desc">Il barocco leccese, le Maldive del Salento, la Notte della Taranta e due mari
+                da vivere.</p>
+              <a href="destinazioni/salento/index.html" class="area-card__link">Esplora →</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ESPERIENZE TEMATICHE ===== -->
+    <section class="section section--alt" aria-labelledby="esperienze-title">
+      <div class="container">
+        <header class="section__header">
+          <h2 class="section__title" id="esperienze-title">Cosa vuoi vivere?</h2>
+          <p class="section__subtitle">La Puglia ha un'esperienza per ogni desiderio.</p>
+          <div class="divider" aria-hidden="true"></div>
+        </header>
+        <div class="exp-grid slider-track">
+
+          <!-- Mare e spiagge -->
+          <article class="exp-card exp-card--icon">
+            <div class="exp-card__img">
+              <svg class="exp-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                aria-hidden="true">
+                <path
+                  d="M3 18c3-3 6-3 9 0s6 3 9 0M3 13c3-3 6-3 9 0s6 3 9 0M12 6a4 4 0 0 0-4-4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4 4" />
+              </svg>
+            </div>
+            <div class="exp-card__body">
+              <span class="exp-card__tag exp-card__tag--mare">Mare</span>
+              <h3 class="exp-card__title">Mare e Spiagge</h3>
+              <p class="exp-card__desc">Dal Gargano al Salento: centinaia di chilometri di costa adriatica e ionica tra
+                spiagge di sabbia bianca e calette selvagge.</p>
+              <a href="esperienze/mare-e-spiagge/index.html" class="exp-card__link">Scopri di più →</a>
+            </div>
+          </article>
+
+          <!-- Borghi e storia -->
+          <article class="exp-card exp-card--icon">
+            <div class="exp-card__img">
+              <svg class="exp-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                aria-hidden="true">
+                <path d="M3 21V8l9-5 9 5v13M9 21V12h6v9M12 3v5" />
+                <rect x="9" y="12" width="6" height="9" rx="0" />
+              </svg>
+            </div>
+            <div class="exp-card__body">
+              <span class="exp-card__tag exp-card__tag--borghi">Borghi</span>
+              <h3 class="exp-card__title">Borghi e Storia</h3>
+              <p class="exp-card__desc">Trulli di Alberobello, barocco leccese, centri storici bianchi e castelli
+                federiciani: la storia si tocca con mano.</p>
+              <a href="esperienze/borghi-e-storia/index.html" class="exp-card__link">Scopri di più →</a>
+            </div>
+          </article>
+
+          <!-- Gastronomia -->
+          <article class="exp-card exp-card--icon">
+            <div class="exp-card__img">
+              <svg class="exp-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                aria-hidden="true">
+                <path d="M3 11l1-4h16l1 4M3 11h18v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-7zM12 3v4M8 3l1 4M16 3l-1 4" />
+              </svg>
+            </div>
+            <div class="exp-card__body">
+              <span class="exp-card__tag exp-card__tag--gastro">Gusto</span>
+              <h3 class="exp-card__title">Gastronomia</h3>
+              <p class="exp-card__desc">Orecchiette, burrata, focaccia barese, pasticciotto leccese e vini straordinari
+                come il Primitivo di Manduria.</p>
+              <a href="esperienze/gastronomia/index.html" class="exp-card__link">Scopri di più →</a>
+            </div>
+          </article>
+
+          <!-- Natura e trekking -->
+          <article class="exp-card exp-card--icon">
+            <div class="exp-card__img">
+              <svg class="exp-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                aria-hidden="true">
+                <path d="M3 20l4-8 4 4 4-10 4 14M12 20v-4" />
+              </svg>
+            </div>
+            <div class="exp-card__body">
+              <span class="exp-card__tag exp-card__tag--natura">Natura</span>
+              <h3 class="exp-card__title">Natura e Trekking</h3>
+              <p class="exp-card__desc">Foresta Umbra, Parco del Gargano, Gravina di Laterza, Ciclovia dell'Acquedotto
+                Pugliese e riserve marine protette.</p>
+              <a href="esperienze/natura-e-trekking/index.html" class="exp-card__link">Scopri di più →</a>
+            </div>
+          </article>
+
+          <!-- Arte e cultura -->
+          <article class="exp-card exp-card--icon">
+            <div class="exp-card__img">
+              <svg class="exp-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                aria-hidden="true">
+                <rect x="3" y="3" width="18" height="14" rx="2" />
+                <path d="M8 21h8M12 17v4" />
+              </svg>
+            </div>
+            <div class="exp-card__body">
+              <span class="exp-card__tag exp-card__tag--cultura">Cultura</span>
+              <h3 class="exp-card__title">Arte e Cultura</h3>
+              <p class="exp-card__desc">MaRTA di Taranto, Basilica di Santa Croce a Lecce, Grotta della Poesia a Roca
+                Vecchia e 4 siti UNESCO.</p>
+              <a href="esperienze/arte-e-cultura/index.html" class="exp-card__link">Scopri di più →</a>
+            </div>
+          </article>
+
+          <!-- Benessere -->
+          <article class="exp-card exp-card--icon">
+            <div class="exp-card__img">
+              <svg class="exp-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                aria-hidden="true">
+                <path d="M12 21a9 9 0 1 1 0-18 9 9 0 0 1 0 18z" />
+                <path d="M12 7v5l3 3" />
+              </svg>
+            </div>
+            <div class="exp-card__body">
+              <span class="exp-card__tag exp-card__tag--benessere">Benessere</span>
+              <h3 class="exp-card__title">Benessere</h3>
+              <p class="exp-card__desc">Masserie di lusso, terme marine, thalassoterapia e il ritmo lento del Sud: la
+                Puglia cura corpo e anima.</p>
+              <a href="esperienze/benessere/index.html" class="exp-card__link">Scopri di più →</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== EVENTI IN EVIDENZA ===== -->
+    <section class="section" aria-labelledby="eventi-title">
+      <div class="container">
+        <header class="section__header">
+          <h2 class="section__title" id="eventi-title">In Puglia in questo momento</h2>
+          <div class="divider" aria-hidden="true"></div>
+        </header>
+        <div class="events-compact slider-track">
+
+          <article class="event-compact-card">
+            <div class="event-compact-card__image"
+              style="background-image: url('assets/img/eventi/notte-taranta.jpg');"></div>
+            <div class="event-compact-card__dot" aria-hidden="true"></div>
+            <div class="event-compact-card__body">
+              <p class="event-compact-card__name">Notte della Taranta</p>
+              <p class="event-compact-card__meta">Agosto · Melpignano (Lecce)</p>
+            </div>
+            <a href="esperienze/eventi/index.html" class="event-compact-card__link"
+              aria-label="Dettagli Notte della Taranta">Dettagli →</a>
+          </article>
+
+          <article class="event-compact-card">
+            <div class="event-compact-card__image"
+              style="background-image: url('assets/img/eventi/festival-valle-itria.jpg');"></div>
+            <div class="event-compact-card__dot" aria-hidden="true"></div>
+            <div class="event-compact-card__body">
+              <p class="event-compact-card__name">Festival della Valle d'Itria</p>
+              <p class="event-compact-card__meta">Luglio · Martina Franca</p>
+            </div>
+            <a href="esperienze/eventi/index.html" class="event-compact-card__link"
+              aria-label="Dettagli Festival della Valle d'Itria">Dettagli →</a>
+          </article>
+
+          <article class="event-compact-card">
+            <div class="event-compact-card__image"
+              style="background-image: url('assets/img/eventi/disfida-barletta.jpg');"></div>
+            <div class="event-compact-card__dot" aria-hidden="true"></div>
+            <div class="event-compact-card__body">
+              <p class="event-compact-card__name">Disfida di Barletta</p>
+              <p class="event-compact-card__meta">1–14 settembre · Barletta</p>
+            </div>
+            <a href="esperienze/eventi/index.html" class="event-compact-card__link"
+              aria-label="Dettagli Disfida di Barletta">Dettagli →</a>
+          </article>
+
+          <article class="event-compact-card">
+            <div class="event-compact-card__image"
+              style="background-image: url('assets/img/eventi/carnevale-putignano.jpg');"></div>
+            <div class="event-compact-card__dot" aria-hidden="true"></div>
+            <div class="event-compact-card__body">
+              <p class="event-compact-card__name">Carnevale di Putignano</p>
+              <p class="event-compact-card__meta">Gennaio–Febbraio · Putignano</p>
+            </div>
+            <a href="esperienze/eventi/index.html" class="event-compact-card__link"
+              aria-label="Dettagli Carnevale di Putignano">Dettagli →</a>
+          </article>
+
+          <article class="event-compact-card">
+            <div class="event-compact-card__image"
+              style="background-image: url('assets/img/eventi/redbull-cliff-diving.jpg');"></div>
+            <div class="event-compact-card__dot" aria-hidden="true"></div>
+            <div class="event-compact-card__body">
+              <p class="event-compact-card__name">Red Bull Cliff Diving</p>
+              <p class="event-compact-card__meta">Settembre · Polignano a Mare</p>
+            </div>
+            <a href="esperienze/eventi/index.html" class="event-compact-card__link"
+              aria-label="Dettagli Red Bull Cliff Diving">Dettagli →</a>
+          </article>
+
+        </div>
+        <div class="section__cta">
+          <a href="esperienze/eventi/index.html" class="section-link">Tutti gli eventi →</a>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ===== QUANDO VENIRE ===== -->
+    <section class="section" aria-labelledby="quando-title">
+      <div class="container">
+        <header class="section__header">
+          <h2 class="section__title" id="quando-title">Quando venire in Puglia</h2>
+          <div class="divider" aria-hidden="true"></div>
+        </header>
+        <div class="season-grid">
+          <article class="season-card">
+            <h3 class="season-card__title"><span class="material-symbols-outlined">local_florist</span> Maggio–Giugno
+            </h3>
+            <p>Periodo ideale per il mare senza folla. Temperature miti (25–28°), prezzi ancora bassi. Fioritura dei
+              campi.</p>
+          </article>
+          <article class="season-card season-card--estate">
+            <h3 class="season-card__title"><span class="material-symbols-outlined">sunny</span> Luglio–Agosto</h3>
+            <p>Alta stagione balneare. Mare splendido, spiagge vivaci. Ricca programmazione eventi: Notte della Taranta,
+              Disfida di Barletta, Festival della Valle d'Itria.</p>
+          </article>
+          <article class="season-card season-card--autunno">
+            <h3 class="season-card__title"><span class="material-symbols-outlined">wine_bar</span> Settembre–Ottobre
+            </h3>
+            <p>Il mese d'oro. Mare ancora caldo (24–26°), spiagge quasi libere, prezzi ragionevoli. Raccolta uva e
+              inizio olive.</p>
+          </article>
+          <article class="season-card season-card--inverno">
+            <h3 class="season-card__title"><span class="material-symbols-outlined">ac_unit</span> Novembre–Aprile</h3>
+            <p>Turismo culturale e gastronomico. Siti UNESCO senza folla. Luminarie di Lecce a Natale. Frangitura
+              dell'olio.</p>
+          </article>
+        </div>
+        <div class="section__cta">
+          <a href="pianifica/index.html" class="btn btn--ghost-dark">Pianifica ora →</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <!-- ===== PIÈ DI PAGINA CON LINK DI NAVIGAZIONE E INFORMAZIONI GENERALI (FOOTER) ===== -->
+  <footer class="site-footer" aria-label="Piè di pagina">
+    <div class="container">
+      <div class="site-footer__grid">
+
+        <!-- Colonna 1: Link rapidi -->
+        <div class="site-footer__col">
+          <h2 class="site-footer__col-title">Link rapidi</h2>
+          <ul class="site-footer__list" role="list">
+            <li><a href="destinazioni/index.html" class="site-footer__link">Destinazioni</a></li>
+            <li><a href="esperienze/index.html" class="site-footer__link">Esperienze</a></li>
+            <li><a href="pianifica/index.html" class="site-footer__link">Pianifica</a></li>
+            <li><a href="contatti/index.html" class="site-footer__link">Contatti</a></li>
+          </ul>
+        </div>
+
+        <!-- Colonna 2: Informazioni -->
+        <div class="site-footer__col">
+          <h2 class="site-footer__col-title">Informazioni</h2>
+          <ul class="site-footer__list" role="list">
+            <li><a href="contatti/index.html" class="site-footer__link">Contatti</a></li>
+            <li><a href="contatti/index.html" class="site-footer__link">Accessibilità</a></li>
+            <li><a href="contatti/index.html" class="site-footer__link">Turismo sostenibile</a></li>
+            <li><a href="contatti/index.html" class="site-footer__link">Sitemap</a></li>
+          </ul>
+        </div>
+
+        <!-- Colonna 3: Aree geografiche -->
+        <div class="site-footer__col">
+          <h2 class="site-footer__col-title">Aree geografiche</h2>
+          <ul class="site-footer__list" role="list">
+            <li><a href="destinazioni/gargano/index.html" class="site-footer__link">Gargano</a></li>
+            <li><a href="destinazioni/bari/index.html" class="site-footer__link">Bari</a></li>
+            <li><a href="destinazioni/bat/index.html" class="site-footer__link">BAT</a></li>
+            <li><a href="destinazioni/taranto/index.html" class="site-footer__link">Taranto</a></li>
+            <li><a href="destinazioni/brindisi/index.html" class="site-footer__link">Brindisi</a></li>
+            <li><a href="destinazioni/salento/index.html" class="site-footer__link">Salento</a></li>
+          </ul>
+        </div>
+
+        <!-- Colonna 4: Tagline -->
+        <div class="site-footer__col">
+          <a href="index.html" class="site-footer__logo" aria-label="Torna alla homepage">Puglia</a>
+          <p class="site-footer__tagline">Puglia. Dove il Sud diventa leggenda.</p>
+        </div>
+
+      </div>
+      <div class="site-footer__bottom">
+        <p>© 2025–2026 Vivere la Puglia</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== CARICAMENTO DELLO SCRIPT COMPORTAMENTALE DEL CAROSELLO (JAVASCRIPT SLIDER) ===== -->
+  <script src="assets/js/slider.js"></script>
+</body>
+
+</html>

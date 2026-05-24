@@ -1,0 +1,1547 @@
+/* ============================================================
+   PUGLIA TURISMO — components.css
+   Autore: Puglia Turismo
+   Versione: 1.0.0
+   Descrizione: Componenti riutilizzabili — card, bottoni, form,
+                tag, pill, griglia esperienze, card evento, ecc.
+   ============================================================ */
+
+
+/* === CARD ESPERIENZE (.exp-card, .exp-grid) === */
+
+/* Contenitore griglia esperienze */
+.exp-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: var(--space-4);
+}
+
+/* Card singola esperienza */
+.exp-card {
+  background: #ffffff;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--color-muted);
+  transition: transform var(--transition-base), box-shadow var(--transition-base);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  cursor: pointer;
+}
+
+.exp-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+/* Placeholder immagine card */
+.exp-card__img {
+  background-color: var(--color-muted);
+  aspect-ratio: 3 / 2;
+  position: relative;
+  overflow: hidden;
+}
+
+.exp-card__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Icona decorativa sul placeholder */
+.exp-card__img::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(0, 119, 182, 0.08) 0%, rgba(90, 110, 58, 0.08) 100%);
+}
+
+/* Corpo card */
+.exp-card__body {
+  padding: var(--space-3);
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: var(--space-1);
+}
+
+/* Tag categoria */
+.exp-card__tag {
+  display: inline-block;
+  padding: 3px 10px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: var(--color-text);
+  border-radius: 100px;
+  width: fit-content;
+  margin-bottom: 4px;
+}
+
+/* Varianti tag colore */
+.exp-card__tag--mare {
+  background: var(--color-primary);
+}
+
+.exp-card__tag--cultura {
+  background: var(--color-accent);
+}
+
+.exp-card__tag--gastro {
+  background: var(--color-secondary);
+}
+
+.exp-card__tag--natura {
+  background: var(--color-secondary);
+}
+
+.exp-card__tag--eventi {
+  background: var(--color-accent);
+}
+
+.exp-card__tag--borghi {
+  background: var(--color-text);
+}
+
+.exp-card__tag--benessere {
+  background: #6B5B95;
+}
+
+.exp-card__tag--vini {
+  background: #8B1A4A;
+}
+
+.exp-card__tag--spiagge {
+  background: var(--color-primary);
+}
+
+/* Titolo card */
+.exp-card__title {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  color: var(--color-text);
+  line-height: 1.3;
+  margin-top: 2px;
+}
+
+/* Descrizione card */
+.exp-card__desc {
+  font-size: var(--text-small);
+  color: #666;
+  line-height: 1.6;
+  flex: 1;
+  max-width: none;
+}
+
+/* Link card */
+.exp-card__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--color-primary);
+  font-size: var(--text-small);
+  font-weight: 600;
+  text-decoration: none;
+  margin-top: var(--space-2);
+  transition: gap var(--transition-base), color var(--transition-base);
+}
+
+.exp-card__link:hover {
+  gap: 8px;
+  color: var(--color-primary-dark);
+}
+
+/* Stretched link — espande il link a tutta la superficie della card */
+.exp-card__link::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+/* Card con icona SVG (nessuna immagine) */
+.exp-card--icon .exp-card__img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, rgba(0, 119, 182, 0.06), rgba(0, 119, 182, 0.12));
+  aspect-ratio: 2 / 1;
+}
+
+.exp-card--icon .exp-card__img::after {
+  display: none;
+}
+
+.exp-card__icon {
+  width: 56px;
+  height: 56px;
+  color: var(--color-primary);
+}
+
+
+/* === CARD AREA GEOGRAFICA (.area-card) === */
+.areas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: var(--space-4);
+}
+
+.area-card {
+  background: #ffffff;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--color-muted);
+  transition: transform var(--transition-base), box-shadow var(--transition-base);
+}
+
+.area-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.area-card__img {
+  aspect-ratio: 4 / 3;
+  background-color: var(--color-muted);
+  overflow: hidden;
+  position: relative;
+}
+
+.area-card__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-slow);
+}
+
+.area-card:hover .area-card__img img {
+  transform: scale(1.04);
+}
+
+/* Gradient overlay sull'immagine area */
+.area-card__img::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 40%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.3), transparent);
+  z-index: 1;
+}
+
+.area-card__body {
+  padding: var(--space-3) var(--space-3) var(--space-4);
+}
+
+.area-card__title {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  color: var(--color-text);
+  margin-bottom: var(--space-1);
+}
+
+.area-card__desc {
+  font-size: var(--text-small);
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: var(--space-2);
+  max-width: none;
+}
+
+/* Lista luoghi simbolo */
+.area-card__places {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: var(--space-3);
+  padding-left: var(--space-2);
+  border-left: 2px solid var(--color-muted);
+}
+
+.area-card__places li {
+  font-size: var(--text-small);
+  color: #555;
+}
+
+.area-card__places li::before {
+  content: '· ';
+  color: var(--color-primary);
+  font-weight: 700;
+}
+
+.area-card__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--color-primary);
+  font-size: var(--text-small);
+  font-weight: 700;
+  text-decoration: none;
+  transition: gap var(--transition-base), color var(--transition-base);
+}
+
+.area-card__link:hover {
+  gap: 10px;
+  color: var(--color-primary-dark);
+}
+
+
+/* === CARD EVENTO (.event-card) === */
+.events-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.event-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  background: #ffffff;
+  border: 1px solid var(--color-muted);
+  border-radius: var(--radius-md);
+  padding: var(--space-3) var(--space-4);
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow var(--transition-base), border-color var(--transition-base);
+}
+
+.event-card:hover {
+  box-shadow: var(--shadow-md);
+  border-color: var(--color-primary);
+}
+
+.event-card__header {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+}
+
+.event-card__date {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-accent);
+  color: #ffffff;
+  border-radius: var(--radius-sm);
+  padding: var(--space-1) var(--space-2);
+  min-width: 80px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.event-card__date-month {
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.event-card__date-text {
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.event-card__info {
+  flex: 1;
+}
+
+.event-card__title {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  color: var(--color-text);
+  margin-bottom: 4px;
+}
+
+.event-card__meta {
+  font-size: var(--text-small);
+  color: #888;
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  flex-wrap: wrap;
+}
+
+.event-card__location::before {
+  content: ' ';
+}
+
+.event-card__desc {
+  font-size: var(--text-small);
+  color: #666;
+  max-width: none;
+  line-height: 1.6;
+}
+
+.event-card__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--color-primary);
+  font-size: var(--text-small);
+  font-weight: 600;
+  text-decoration: none;
+  transition: gap var(--transition-base);
+  align-self: flex-start;
+}
+
+.event-card__link:hover {
+  gap: 8px;
+  color: var(--color-primary-dark);
+}
+
+/* Lista eventi compatta (homepage) */
+.events-compact {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.event-compact-card {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  background: #ffffff;
+  border: 1px solid var(--color-muted);
+  border-radius: var(--radius-md);
+  padding: var(--space-2) var(--space-3);
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow var(--transition-base);
+  position: relative;
+  overflow: hidden;
+  min-height: 80px;
+  padding: var(--space-2) var(--space-3);
+  padding-right: calc(38% + var(--space-4));
+}
+
+
+.event-compact-card:hover {
+  box-shadow: var(--shadow-md);
+}
+
+/* Immagine a destra che sfuma */
+.event-compact-card__image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 0.6) 35%, black 100%);
+  mask-image: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 0.6) 35%, black 100%);
+}
+
+/* Contenuto testuale a sinistra, sopra l'immagine */
+.event-compact-card__dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--color-accent);
+  flex-shrink: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.event-compact-card__body {
+  flex: 1;
+  position: relative;
+  z-index: 1;
+}
+
+.event-compact-card__name {
+  font-weight: 600;
+  font-size: var(--text-body);
+  color: var(--color-text);
+  line-height: 1.3;
+}
+
+.event-compact-card__meta {
+  font-size: var(--text-small);
+  color: #888;
+  margin-top: 2px;
+}
+
+.event-compact-card__link {
+  color: var(--color-primary);
+  font-size: var(--text-small);
+  font-weight: 600;
+  text-decoration: none;
+  flex-shrink: 0;
+  white-space: nowrap;
+  position: relative;
+  z-index: 1;
+}
+
+.event-compact-card__link:hover {
+  color: var(--color-primary-dark);
+}
+
+
+.event-compact-card__body {
+  flex: 1;
+}
+
+
+
+
+
+
+
+/* === STAT-CARD (.stat-card) === */
+/* Definita in main.css — qui eventuali varianti */
+.stat-card--accent .stat-card__number {
+  color: var(--color-accent);
+}
+
+.stat-card--secondary .stat-card__number {
+  color: var(--color-secondary);
+}
+
+
+/* === SEZIONI PAGINA (.section-hero, .section-content) === */
+
+/* Sezione con sfondo chiaro alternato */
+.section-content {
+  padding-block: var(--space-8);
+}
+
+.section-content+.section-content {
+  border-top: 1px solid var(--color-muted);
+}
+
+/* Blocco di testo intro con icona area */
+.area-intro {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  margin-bottom: var(--space-8);
+}
+
+.area-intro__text {
+  font-size: clamp(1rem, 2vw, 1.125rem);
+  color: #555;
+  line-height: var(--line-height-body);
+  max-width: 75ch;
+}
+
+/* Banner UNESCO */
+.unesco-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  background: #FFF8E1;
+  border: 1px solid #F9A825;
+  border-radius: var(--radius-sm);
+  padding: 4px 12px;
+  font-size: var(--text-small);
+  font-weight: 600;
+  color: #7a5c00;
+}
+
+/* Lista spiagge inline con placeholder img */
+.beach-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: var(--space-3);
+}
+
+.beach-card {
+  background: #ffffff;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid var(--color-muted);
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--transition-base), box-shadow var(--transition-base);
+}
+
+.beach-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+}
+
+.beach-card__img {
+  aspect-ratio: 16 / 9;
+  background: linear-gradient(135deg, #0077B6 0%, #00B4D8 100%);
+  position: relative;
+}
+
+.beach-card__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.beach-card__body {
+  padding: var(--space-2) var(--space-3) var(--space-3);
+}
+
+.beach-card__title {
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  color: var(--color-text);
+  margin-bottom: 4px;
+}
+
+.beach-card__desc {
+  font-size: var(--text-small);
+  color: #666;
+  line-height: 1.5;
+  max-width: none;
+}
+
+/* Carta borgo */
+.borgo-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: var(--space-3);
+}
+
+.borgo-card {
+  background: #ffffff;
+  border: 1px solid var(--color-muted);
+  border-radius: var(--radius-md);
+  padding: var(--space-3);
+  box-shadow: var(--shadow-sm);
+  transition: border-color var(--transition-base), box-shadow var(--transition-base);
+}
+
+.borgo-card:hover {
+  border-color: var(--color-primary);
+  box-shadow: var(--shadow-md);
+}
+
+.borgo-card__title {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  color: var(--color-text);
+  margin-bottom: var(--space-1);
+}
+
+.borgo-card__desc {
+  font-size: var(--text-small);
+  color: #666;
+  line-height: 1.6;
+  max-width: none;
+}
+
+
+/* === FORM (.form-group, .form-label, .form-input) === */
+.contact-form {
+  max-width: 640px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.form-label {
+  font-size: var(--text-small);
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.form-label .required-mark {
+  color: var(--color-accent);
+  margin-left: 2px;
+}
+
+.form-input,
+.form-select,
+.form-textarea {
+  width: 100%;
+  padding: 12px var(--space-2);
+  font-size: var(--text-body);
+  font-family: var(--font-body);
+  color: var(--color-text);
+  background: #ffffff;
+  border: 1.5px solid var(--color-muted);
+  border-radius: var(--radius-sm);
+  transition: border-color var(--transition-base), box-shadow var(--transition-base);
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.form-input:focus,
+.form-select:focus,
+.form-textarea:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(0, 119, 182, 0.15);
+}
+
+.form-textarea {
+  resize: vertical;
+  min-height: 140px;
+  line-height: var(--line-height-body);
+}
+
+.form-select {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23666' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right var(--space-2) center;
+  padding-right: var(--space-6);
+  cursor: pointer;
+}
+
+.form-note {
+  font-size: var(--text-small);
+  color: #888;
+  line-height: 1.5;
+}
+
+
+/* === BOTTONI (.btn, .btn--primary, .btn--ghost) === */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 14px var(--space-4);
+  font-size: var(--text-body);
+  font-weight: 600;
+  font-family: var(--font-body);
+  border-radius: var(--radius-sm);
+  border: 2px solid transparent;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color var(--transition-base),
+    color var(--transition-base),
+    border-color var(--transition-base),
+    transform var(--transition-base),
+    box-shadow var(--transition-base);
+  white-space: nowrap;
+  line-height: 1;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn:active {
+  transform: translateY(0);
+}
+
+/* Bottone primario */
+.btn--primary {
+  background-color: var(--color-primary);
+  color: #ffffff;
+  border-color: var(--color-primary);
+  box-shadow: 0 4px 14px rgba(0, 119, 182, 0.3);
+}
+
+.btn--primary:hover {
+  background-color: var(--color-primary-dark);
+  border-color: var(--color-primary-dark);
+  box-shadow: 0 6px 20px rgba(0, 119, 182, 0.4);
+}
+
+/* Bottone ghost (trasparente) */
+.btn--ghost {
+  background-color: transparent;
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.6);
+}
+
+.btn--ghost:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  border-color: #ffffff;
+}
+
+/* Bottone ghost scuro */
+.btn--ghost-dark {
+  background-color: transparent;
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.btn--ghost-dark:hover {
+  background-color: var(--color-primary);
+  color: #ffffff;
+}
+
+/* Bottone accento */
+.btn--accent {
+  background-color: var(--color-accent);
+  color: #ffffff;
+  border-color: var(--color-accent);
+}
+
+.btn--accent:hover {
+  background-color: var(--color-accent-dark);
+  border-color: var(--color-accent-dark);
+}
+
+/* Tasto submit form */
+.btn--submit {
+  background-color: var(--color-primary);
+  color: #ffffff;
+  border-color: var(--color-primary);
+  width: 100%;
+  padding: 16px;
+  font-size: 1rem;
+}
+
+.btn--submit:hover {
+  background-color: var(--color-primary-dark);
+}
+
+
+/* === TAG (.tag, .tag--[variante]) === */
+.tag {
+  display: inline-block;
+  padding: 4px 12px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border-radius: 100px;
+  background: var(--color-muted);
+  color: var(--color-text);
+}
+
+.tag--primary {
+  background: var(--color-primary);
+  color: #ffffff;
+}
+
+.tag--accent {
+  background: var(--color-accent);
+  color: #ffffff;
+}
+
+.tag--secondary {
+  background: var(--color-secondary);
+  color: #ffffff;
+}
+
+.tag--muted {
+  background: var(--color-muted);
+  color: var(--color-text);
+}
+
+
+/* === PILL LINK (.pill) === */
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px var(--space-3);
+  font-size: var(--text-small);
+  font-weight: 600;
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 100px;
+  text-decoration: none;
+  transition: background-color var(--transition-base),
+    border-color var(--transition-base),
+    transform var(--transition-base);
+  white-space: nowrap;
+}
+
+.pill:hover {
+  background: rgba(255, 255, 255, 0.30);
+  border-color: rgba(255, 255, 255, 0.6);
+  transform: translateY(-2px);
+}
+
+.pill__icon {
+  font-size: 1.1em;
+}
+
+
+/* === TABELLA STAGIONALE (.season-grid) === */
+/* Definita in main.css — qui varianti specifiche */
+
+/* Card stagione con bordo colorato */
+.season-card p {
+  font-size: var(--text-small);
+  color: #555;
+  line-height: 1.6;
+  max-width: none;
+}
+
+
+/* === MAGAZINE CARD === */
+.magazine-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: var(--space-4);
+}
+
+.magazine-card {
+  background: #ffffff;
+  border: 1px solid var(--color-muted);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--transition-base), box-shadow var(--transition-base);
+}
+
+.magazine-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.magazine-card__img {
+  aspect-ratio: 3 / 2;
+  background: var(--color-muted);
+  overflow: hidden;
+}
+
+.magazine-card__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-slow);
+}
+
+.magazine-card:hover .magazine-card__img img {
+  transform: scale(1.05);
+}
+
+.magazine-card__body {
+  padding: var(--space-3);
+}
+
+.magazine-card__category {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin-bottom: var(--space-1);
+}
+
+.magazine-card__title {
+  font-family: var(--font-heading);
+  font-size: 1.05rem;
+  color: var(--color-text);
+  line-height: 1.35;
+  margin-bottom: var(--space-1);
+}
+
+.magazine-card__preview {
+  font-size: var(--text-small);
+  color: #666;
+  line-height: 1.6;
+  max-width: none;
+  margin-bottom: var(--space-2);
+}
+
+.magazine-card__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: var(--text-small);
+  font-weight: 700;
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: gap var(--transition-base);
+}
+
+.magazine-card__link:hover {
+  gap: 8px;
+}
+
+
+/* === SEZIONE CTA BANNER === */
+.cta-banner {
+  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
+  color: #ffffff;
+  border-radius: var(--radius-lg);
+  padding: var(--space-8) var(--space-4);
+  text-align: center;
+}
+
+.cta-banner__title {
+  font-family: var(--font-heading);
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
+  color: #ffffff;
+  margin-bottom: var(--space-2);
+}
+
+.cta-banner__text {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 1.05rem;
+  max-width: 55ch;
+  margin-inline: auto;
+  margin-bottom: var(--space-4);
+}
+
+/* === LINK ESTERNO === */
+.ext-link {
+  color: var(--color-primary);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  font-weight: 600;
+  transition: color var(--transition-base);
+}
+
+.ext-link:hover {
+  color: var(--color-primary-dark);
+}
+
+/* === INFO BOX (pratiche/note) === */
+.info-box {
+  background: #EFF8FF;
+  border-left: 4px solid var(--color-primary);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  padding: var(--space-3) var(--space-4);
+  margin-block: var(--space-4);
+}
+
+.info-box p {
+  font-size: var(--text-small);
+  color: #1a3a52;
+  max-width: none;
+  line-height: 1.6;
+}
+
+.info-box__title {
+  font-weight: 700;
+  font-size: var(--text-small);
+  color: var(--color-primary);
+  margin-bottom: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.info-list__link {
+  color: var(--color-primary);
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px solid var(--color-primary);
+  transition: opacity var(--transition-base);
+}
+
+.info-list__link:hover {
+  opacity: 0.7;
+}
+
+/* === HERO DECORATIVO GRADIENTE === */
+.hero__gradient-decor {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 120px;
+  background: linear-gradient(to top, var(--color-bg), transparent);
+  z-index: 2;
+}
+
+
+/* === PAGE INTRO (.page-intro) === */
+.page-intro {
+  font-size: clamp(1rem, 2vw, 1.125rem);
+  color: #555;
+  line-height: var(--line-height-body);
+  max-width: 75ch;
+}
+
+
+/* === INFO LIST (.info-list, .info-list__item) === */
+.info-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.info-list__item {
+  padding: var(--space-2) var(--space-3);
+  border-left: 3px solid var(--color-muted);
+  background: #ffffff;
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  transition: border-color var(--transition-base);
+}
+
+.info-list__item:hover {
+  border-left-color: var(--color-primary);
+}
+
+.info-list__item p,
+.info-list__item div {
+  font-size: var(--text-small);
+  color: var(--color-text);
+  line-height: 1.65;
+  max-width: none;
+  margin: 0;
+}
+
+.info-list__item strong {
+  color: var(--color-text);
+}
+
+
+/* === SUBSECTION (.subsection) === */
+.subsection {
+  margin-bottom: var(--space-6);
+}
+
+.subsection__title {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: var(--space-3);
+  padding-bottom: var(--space-1);
+  border-bottom: 2px solid var(--color-muted);
+}
+
+
+/* === EVENT LIST / EVENT CARD (.event-list, .event-card) === */
+.event-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.event-card {
+  background: #ffffff;
+  border: 1px solid var(--color-muted);
+  border-radius: var(--radius-md);
+  padding: var(--space-4);
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow var(--transition-base), border-color var(--transition-base);
+}
+
+.event-card:hover {
+  box-shadow: var(--shadow-md);
+  border-color: var(--color-primary);
+}
+
+.event-card__header {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3);
+  margin-bottom: var(--space-2);
+}
+
+.event-card__month {
+  flex-shrink: 0;
+  display: inline-block;
+  background: var(--color-primary);
+  color: #ffffff;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: var(--radius-sm);
+  white-space: nowrap;
+  margin-top: 4px;
+}
+
+.event-card__title {
+  font-family: var(--font-heading);
+  font-size: 1.2rem;
+  color: var(--color-text);
+  margin-bottom: 2px;
+}
+
+.event-card__location {
+  font-size: var(--text-small);
+  color: #777;
+  margin: 0;
+  max-width: none;
+}
+
+.event-card__desc {
+  font-size: var(--text-small);
+  color: #555;
+  line-height: 1.65;
+  max-width: none;
+  margin-bottom: var(--space-2);
+}
+
+.event-card__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-1);
+}
+
+.event-card__tag {
+  display: inline-block;
+  padding: 3px 10px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border-radius: 100px;
+  background: var(--color-muted);
+  color: var(--color-text);
+}
+
+
+/* === STATS GRID (.stats-grid, .stat-item) === */
+/* Usato nella pagina Magazine */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: var(--space-4);
+  text-align: center;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-1);
+  padding: var(--space-4);
+  background: #ffffff;
+  border: 1px solid var(--color-muted);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+}
+
+.stat-item__number {
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 4vw, 3rem);
+  color: var(--color-primary);
+  font-weight: 700;
+  line-height: 1;
+}
+
+.stat-item__label {
+  font-size: var(--text-small);
+  color: #666;
+  text-align: center;
+  line-height: 1.4;
+  max-width: 18ch;
+}
+
+
+/* === SITEMAP GRID (.sitemap-grid, .sitemap-col) === */
+.sitemap-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: var(--space-6);
+}
+
+.sitemap-col__title {
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-primary);
+  margin-bottom: var(--space-2);
+  padding-bottom: var(--space-1);
+  border-bottom: 2px solid var(--color-muted);
+}
+
+.sitemap-col__list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.sitemap-col__link {
+  font-size: var(--text-small);
+  color: var(--color-text);
+  text-decoration: none;
+  line-height: 1.5;
+  transition: color var(--transition-base);
+}
+
+.sitemap-col__link:hover {
+  color: var(--color-primary);
+  text-decoration: underline;
+}
+
+
+/* === VINI TAG VARIANTI === */
+.exp-card__tag--vini {
+  background: #5c3d8f;
+  color: #ffffff;
+}
+
+.exp-card__tag--benessere {
+  background: #1a7f5a;
+  color: #ffffff;
+}
+
+.exp-card__tag--mare {
+  background: var(--color-primary);
+  color: #ffffff;
+}
+
+.exp-card__tag--borghi {
+  background: #7a4a1e;
+  color: #ffffff;
+}
+
+.exp-card__tag--cultura {
+  background: #2d5a8e;
+  color: #ffffff;
+}
+
+
+/* === CSS-ONLY TAB SYSTEM (.tabs) === */
+.tabs__input {
+  display: none;
+}
+
+.tabs__nav {
+  display: flex;
+  overflow-x: auto;
+  scrollbar-width: none;
+  gap: 4px;
+  border-bottom: 2px solid var(--color-muted);
+  margin-bottom: var(--space-6);
+  padding-bottom: 0;
+}
+
+.tabs__nav::-webkit-scrollbar {
+  display: none;
+}
+
+.tabs__label {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px var(--space-3);
+  font-size: var(--text-small);
+  font-weight: 600;
+  color: #666;
+  cursor: pointer;
+  white-space: nowrap;
+  border-bottom: 3px solid transparent;
+  margin-bottom: -2px;
+  border-radius: var(--radius-sm) var(--radius-sm) 0 0;
+  transition: color var(--transition-base), border-color var(--transition-base), background-color var(--transition-base);
+}
+
+.tabs__label:hover {
+  color: var(--color-primary);
+  background-color: rgba(84, 175, 188, 0.06);
+}
+
+.tabs__panel {
+  display: none;
+}
+
+#tab-eventi:checked~.tabs__nav label[for="tab-eventi"],
+#tab-cucina:checked~.tabs__nav label[for="tab-cucina"],
+#tab-mare:checked~.tabs__nav label[for="tab-mare"],
+#tab-cultura:checked~.tabs__nav label[for="tab-cultura"],
+#tab-spa:checked~.tabs__nav label[for="tab-spa"],
+#tab-sport:checked~.tabs__nav label[for="tab-sport"],
+#tab-locale:checked~.tabs__nav label[for="tab-locale"] {
+  color: var(--color-primary);
+  border-bottom-color: var(--color-primary);
+  background-color: rgba(84, 175, 188, 0.08);
+}
+
+#tab-eventi:checked~.tabs__panels .panel-eventi {
+  display: block;
+}
+
+#tab-cucina:checked~.tabs__panels .panel-cucina {
+  display: block;
+}
+
+#tab-mare:checked~.tabs__panels .panel-mare {
+  display: block;
+}
+
+#tab-cultura:checked~.tabs__panels .panel-cultura {
+  display: block;
+}
+
+#tab-spa:checked~.tabs__panels .panel-spa {
+  display: block;
+}
+
+#tab-sport:checked~.tabs__panels .panel-sport {
+  display: block;
+}
+
+#tab-locale:checked~.tabs__panels .panel-locale {
+  display: block;
+}
+
+
+/* === CSS-ONLY SLIDER === */
+.slider-track {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  gap: var(--space-4);
+  position: relative;
+}
+
+.slider-track::-webkit-scrollbar {
+  display: none;
+}
+
+.slider-item,
+.slider-track>* {
+  flex: 0 0 300px;
+  scroll-snap-align: start;
+}
+
+@media (max-width: 767px) {
+
+  .areas-grid--slider,
+  .exp-grid--slider,
+  .events-compact--slider {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    gap: var(--space-4);
+  }
+
+  .areas-grid--slider::-webkit-scrollbar,
+  .exp-grid--slider::-webkit-scrollbar,
+  .events-compact--slider::-webkit-scrollbar {
+    display: none;
+  }
+
+  .areas-grid--slider .area-card,
+  .exp-grid--slider .exp-card,
+  .events-compact--slider .event-compact-card {
+    flex: 0 0 280px;
+    scroll-snap-align: start;
+  }
+}
+
+/* Editorial article card inside tab panels */
+.article-card {
+  background: #ffffff;
+  border: 1px solid var(--color-muted);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--transition-base), box-shadow var(--transition-base);
+}
+
+.article-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.article-card__label {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  padding: var(--space-3) var(--space-3) 0;
+}
+
+.article-card__title {
+  font-family: var(--font-heading);
+  font-size: 1.05rem;
+  color: var(--color-text);
+  line-height: 1.35;
+  padding: 6px var(--space-3) var(--space-1);
+}
+
+.article-card__desc {
+  font-size: var(--text-small);
+  color: #666;
+  line-height: 1.6;
+  padding: 0 var(--space-3) var(--space-3);
+  max-width: none;
+}
+
+.panel-section-title {
+  font-family: var(--font-heading);
+  font-size: var(--text-h3);
+  color: var(--color-text);
+  margin-top: var(--space-8);
+  margin-bottom: var(--space-4);
+  padding-bottom: var(--space-2);
+  border-bottom: 2px solid var(--color-muted);
+}
+
+.panel-section-title:first-child {
+  margin-top: 0;
+}
+
+/* Destinazioni Tabs Filter */
+#tab-nord:checked~.tabs__nav label[for="tab-nord"],
+#tab-centro:checked~.tabs__nav label[for="tab-centro"],
+#tab-sud:checked~.tabs__nav label[for="tab-sud"],
+#tab-tutte:checked~.tabs__nav label[for="tab-tutte"] {
+  color: var(--color-primary);
+  border-bottom-color: var(--color-primary);
+  background-color: rgba(84, 175, 188, 0.08);
+}
+
+#tab-nord:checked~.tabs__panels .area-card:not([data-area="nord"]),
+#tab-centro:checked~.tabs__panels .area-card:not([data-area="centro"]),
+#tab-sud:checked~.tabs__panels .area-card:not([data-area="sud"]) {
+  display: none;
+}
+
+
+/* === SLIDER ARROWS (JS INJECTED) === */
+.slider-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.slider-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  color: var(--color-primary);
+  cursor: pointer;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: opacity 0.3s ease, background 0.3s ease, transform 0.2s ease;
+}
+
+.slider-arrow:hover {
+  background: #ffffff;
+  transform: translateY(-50%) scale(1.05);
+}
+
+.slider-arrow--prev {
+  left: -15px;
+}
+
+.slider-arrow--next {
+  right: -15px;
+}
+
+@media (max-width: 767px) {
+  .slider-arrow {
+    display: none !important;
+  }
+}

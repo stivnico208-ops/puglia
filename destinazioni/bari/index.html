@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<!-- ===== INIZIO INTESTAZIONE DI METADATI (HEAD) ===== -->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bari e Città Metropolitana — Il Cuore della Puglia | Puglia Turismo</title>
+  <meta name="description"
+    content="Scopri Bari e la sua provincia: Alberobello UNESCO, Grotte di Castellana, Polignano a Mare, Valle d'Itria e la gastronomia pugliese per eccellenza.">
+  <meta property="og:title" content="Bari e Città Metropolitana — Il Cuore della Puglia | Puglia Turismo">
+  <meta property="og:description"
+    content="Scopri Bari e la sua provincia: Alberobello UNESCO, Grotte di Castellana, Polignano a Mare, Valle d'Itria e la gastronomia pugliese per eccellenza.">
+  <meta property="og:type" content="website">
+  <link rel="canonical" href="https://example.com/destinazioni/bari/">
+  <link rel="stylesheet" href="../../assets/css/main.css">
+  <link rel="stylesheet" href="../../assets/css/components.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=museum" />
+  <link rel="icon" href="../../../favicon.png" type="image/png">
+</head>
+
+<!-- ===== CORPO DELLA PAGINA (BODY) ===== -->
+
+<body>
+
+  <!-- ===== AGGANCIO LOGICA MENU MOBILE (CHECKBOX HIDDEN PER TOGGLE) ===== -->
+  <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-hidden="true">
+
+  <!-- ===== INTESTAZIONE SITO E NAVIGAZIONE PRINCIPALE (HEADER) ===== -->
+  <header class="site-header" aria-label="Intestazione sito">
+    <div class="container">
+      <a href="../../index.html" class="site-logo">Puglia</a>
+      <nav class="site-nav" aria-label="Navigazione principale">
+        <ul class="site-nav__list" role="list">
+          <li><a href="../../destinazioni/index.html" class="site-nav__link site-nav__link--active">Destinazioni</a>
+          </li>
+          <li><a href="../../esperienze/index.html" class="site-nav__link">Esperienze</a></li>
+          <li><a href="../../pianifica/index.html" class="site-nav__link">Pianifica</a></li>
+          <li><a href="../../contatti/index.html" class="site-nav__link">Contatti</a></li>
+        </ul>
+      </nav>
+      <label for="nav-toggle" class="nav-toggle-label"
+        aria-label="Apri/chiudi menu"><span></span><span></span><span></span></label>
+    </div>
+  </header>
+
+  <!-- ===== NAVIGAZIONE COLLASSABILE PER DISPOSITIVI MOBILE (MOBILE NAV OVERLAY) ===== -->
+  <nav class="mobile-nav" aria-label="Menu mobile">
+    <ul class="mobile-nav__list" role="list">
+      <li><a href="../../destinazioni/index.html" class="mobile-nav__link">Destinazioni</a></li>
+      <li><a href="../../esperienze/index.html" class="mobile-nav__link">Esperienze</a></li>
+      <li><a href="../../pianifica/index.html" class="mobile-nav__link">Pianifica</a></li>
+      <li><a href="../../contatti/index.html" class="mobile-nav__link">Contatti</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===== CONTENUTO PRINCIPALE DELLA PAGINA (MAIN CONTENT) ===== -->
+  <main id="main-content">
+
+    <!-- ===== COPERTINA DI BENVENUTO / SEZIONE INIZIALE (HERO) ===== -->
+    <section class="hero hero--page" aria-labelledby="page-title">
+      <div class="hero__overlay"></div>
+      <div class="hero__content">
+        <div class="container">
+          <h1 class="hero__title" id="page-title">Bari e Città Metropolitana — Il Cuore della Puglia</h1>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== INTRO ===== -->
+    <section class="section section--sm">
+      <div class="container">
+        <p class="area-intro__text">Bari è il capoluogo regionale della Puglia: una città vivace affacciata
+          sull'Adriatico con un centro storico labirintico — Bari Vecchia — e una vita portuale ancora autentica. La sua
+          provincia metropolitana racchiude la Valle d'Itria con i celebri trulli di Alberobello (patrimonio UNESCO dal
+          1996), le spettacolari Grotte di Castellana, e la costa con le calette di Polignano a Mare. Dal Parco
+          Nazionale dell'Alta Murgia ai borghi barocchi come Martina Franca, ogni angolo della provincia offre
+          un'esperienza diversa.</p>
+        <div style="margin-top:var(--space-3);">
+          <span class="unesco-badge"><span class="material-symbols-outlined">museum</span> UNESCO: Trulli di
+            Alberobello</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SPIAGGE ===== -->
+    <section class="section section--alt" aria-labelledby="spiagge-title">
+      <div class="container">
+        <h2 class="section__title" id="spiagge-title">Spiagge</h2>
+        <div class="divider" aria-hidden="true"></div>
+        <div class="beach-list slider-track">
+          <article class="beach-card">
+            <div class="beach-card__img"><img src="" alt="Cala Porto a Polignano a Mare tra le scogliere calcaree"
+                width="800" height="450" loading="lazy"></div>
+            <div class="beach-card__body">
+              <h3 class="beach-card__title">Polignano a Mare — Cala Porto, Cala Paura, Lama Monachile</h3>
+              <p class="beach-card__desc">Calette incastonate tra le falesie calcaree bianche del promontorio. Lama
+                Monachile è la spiaggia-simbolo della città, patria di Domenico Modugno.</p>
+            </div>
+          </article>
+          <article class="beach-card">
+            <div class="beach-card__img"><img src="" alt="Porto Ghiacciolo a Monopoli con acque trasparenti" width="800"
+                height="450" loading="lazy"></div>
+            <div class="beach-card__body">
+              <h3 class="beach-card__title">Porto Ghiacciolo — Monopoli</h3>
+              <p class="beach-card__desc">Piccola baia naturale protetta, acque limpide, ideale per lo snorkeling tra le
+                rocce.</p>
+            </div>
+          </article>
+          <article class="beach-card">
+            <div class="beach-card__img"><img src="" alt="Cala Corvino a Monopoli con fondali bassi" width="800"
+                height="450" loading="lazy"></div>
+            <div class="beach-card__body">
+              <h3 class="beach-card__title">Cala Corvino — Monopoli</h3>
+              <p class="beach-card__desc">Caletta raccolta con fondali bassi e rocce bianche, circondata dalla macchia
+                mediterranea.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== BORGHI ===== -->
+    <section class="section" aria-labelledby="borghi-title">
+      <div class="container">
+        <h2 class="section__title" id="borghi-title">Borghi e Città</h2>
+        <div class="divider" aria-hidden="true"></div>
+        <div class="borgo-list slider-track">
+          <article class="borgo-card">
+            <h3 class="borgo-card__title">Bari Vecchia</h3>
+            <p class="borgo-card__desc">La città antica con la Basilica di San Nicola (XII sec.), il Castello Svevo
+              normanno-svevo-aragonese e le donne che impastano le orecchiette all'Arco Basso.</p>
+          </article>
+          <article class="borgo-card">
+            <h3 class="borgo-card__title">Polignano a Mare</h3>
+            <p class="borgo-card__desc">Centro storico su un promontorio calcareo a picco sul mare. Patria di Domenico
+              Modugno. Ogni anno ospita il Red Bull Cliff Diving.</p>
+          </article>
+          <article class="borgo-card">
+            <h3 class="borgo-card__title">Alberobello</h3>
+            <p class="borgo-card__desc">Patrimonio UNESCO dal 1996. Oltre 1500 trulli nella zona monumentale dei Rioni
+              Monti e Aia Piccola. Il Trullo Sovrano è l'unico a due piani.</p>
+          </article>
+          <article class="borgo-card">
+            <h3 class="borgo-card__title">Locorotondo</h3>
+            <p class="borgo-card__desc">Tra i Borghi più belli d'Italia. Forma circolare insolita, vie imbiancate a
+              calce, ottimo vino DOC da Verdeca e Bianco d'Alessano.</p>
+          </article>
+          <article class="borgo-card">
+            <h3 class="borgo-card__title">Martina Franca</h3>
+            <p class="borgo-card__desc">Barocco pugliese nel centro storico, Palazzo Ducale del XVII sec. Dal 1975 sede
+              del Festival della Valle d'Itria (opera lirica, luglio).</p>
+          </article>
+          <article class="borgo-card">
+            <h3 class="borgo-card__title">Monopoli</h3>
+            <p class="borgo-card__desc">Porto medievale con Castello Carlo V del XVI sec. e la Cattedrale di Maria SS.
+              della Madia. Centro storico vivace sul mare.</p>
+          </article>
+          <article class="borgo-card">
+            <h3 class="borgo-card__title">Conversano</h3>
+            <p class="borgo-card__desc">Castello del XI sec., abbazia benedettina con chiostro medievale e pinacoteca.
+              Borgo tranquillo nell'entroterra barese.</p>
+          </article>
+          <article class="borgo-card">
+            <h3 class="borgo-card__title">Putignano</h3>
+            <p class="borgo-card__desc">Sede del Carnevale più antico d'Italia (dal 1394). Sfilate di carri allegorici
+              satirici di fama internazionale a gennaio-febbraio.</p>
+          </article>
+          <article class="borgo-card">
+            <h3 class="borgo-card__title">Bitonto</h3>
+            <p class="borgo-card__desc">Detta "Città degli Ulivi". Cattedrale romanica del XII sec. tra le meglio
+              conservate di Puglia. Olio extravergine di eccellente qualità.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== UNESCO ===== -->
+    <section class="section section--alt" aria-labelledby="unesco-title">
+      <div class="container">
+        <h2 class="section__title" id="unesco-title">Siti UNESCO</h2>
+        <div class="divider" aria-hidden="true"></div>
+        <div class="info-list">
+          <div class="info-list__item">
+            <div>
+              <strong>Trulli di Alberobello (UNESCO 1996)</strong><br>
+              <span style="font-size:var(--text-small);color:#666;">Oltre 1500 costruzioni in pietra a secco con tetto
+                conico, nate nel Seicento per eludere le tasse feudali. Zona monumentale Rioni Monti e Aia
+                Piccola.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== GROTTE ===== -->
+    <section class="section" aria-labelledby="grotte-title">
+      <div class="container">
+        <h2 class="section__title" id="grotte-title">Grotte e Meraviglie Naturali</h2>
+        <div class="divider" aria-hidden="true"></div>
+        <div class="info-list">
+          <div class="info-list__item">
+            <div>
+              <strong>Grotte di Castellana</strong><br>
+              <span style="font-size:var(--text-small);color:#666;">Sistema di 3 km di gallerie carsiche a 70 m di
+                profondità. La Grotta Bianca è tra le concrezioni più spettacolari al mondo. Due percorsi: corto 1 km /
+                50 min; lungo 3 km / 2 ore. Aperte tutto l'anno.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== GASTRONOMIA ===== -->
+    <section class="section section--alt" aria-labelledby="gastro-title">
+      <div class="container">
+        <h2 class="section__title" id="gastro-title">Gastronomia Barese</h2>
+        <div class="divider" aria-hidden="true"></div>
+        <div class="exp-grid slider-track">
+          <article class="exp-card">
+            <div class="exp-card__img"><img src="" alt="Focaccia barese alta con olive e pomodorini" width="800"
+                height="533" loading="lazy"></div>
+            <div class="exp-card__body">
+              <span class="exp-card__tag exp-card__tag--gastro">Street food</span>
+              <h3 class="exp-card__title">Focaccia Barese</h3>
+              <p class="exp-card__desc">Alta, morbida, con olive nere Caggia e pomodorini. L'impasto è idratato con
+                acqua di patate per la consistenza inconfondibile.</p>
+            </div>
+          </article>
+          <article class="exp-card">
+            <div class="exp-card__img"><img src="" alt="Panzerotto fritto con ripieno di pomodoro e mozzarella"
+                width="800" height="533" loading="lazy"></div>
+            <div class="exp-card__body">
+              <span class="exp-card__tag exp-card__tag--gastro">Street food</span>
+              <h3 class="exp-card__title">Panzerotto</h3>
+              <p class="exp-card__desc">Pasta di pane fritta ripiena di pomodoro e mozzarella. Lo street food più amato
+                di Bari, da mangiare bollente.</p>
+            </div>
+          </article>
+          <article class="exp-card">
+            <div class="exp-card__img"><img src="" alt="Tiella barese con riso patate e cozze nel tegame di terracotta"
+                width="800" height="533" loading="lazy"></div>
+            <div class="exp-card__body">
+              <span class="exp-card__tag exp-card__tag--gastro">Piatto tipico</span>
+              <h3 class="exp-card__title">Tiella Barese</h3>
+              <p class="exp-card__desc">Riso, patate e cozze cotti in tegame. Piatto povero diventato simbolo
+                gastronomico dell'intera regione.</p>
+            </div>
+          </article>
+          <article class="exp-card">
+            <div class="exp-card__img"><img src="" alt="Bombette di Cisternino sulla griglia" width="800" height="533"
+                loading="lazy"></div>
+            <div class="exp-card__body">
+              <span class="exp-card__tag exp-card__tag--gastro">Carne</span>
+              <h3 class="exp-card__title">Bombette di Cisternino</h3>
+              <p class="exp-card__desc">Involtini di capocollo ripieni di caciocavallo, cotti alla brace nelle
+                macellerie-fornelli della Valle d'Itria.</p>
+            </div>
+          </article>
+          <article class="exp-card">
+            <div class="exp-card__img"><img src="" alt="Burrata di Andria IGP aperta con stracciatella" width="800"
+                height="533" loading="lazy"></div>
+            <div class="exp-card__body">
+              <span class="exp-card__tag exp-card__tag--natura">IGP</span>
+              <h3 class="exp-card__title">Burrata di Andria IGP</h3>
+              <p class="exp-card__desc">Involucro di mozzarella ripieno di panna e stracciatella. Da consumare
+                freschissima, entro 24 ore dalla produzione.</p>
+            </div>
+          </article>
+          <article class="exp-card">
+            <div class="exp-card__img"><img src="" alt="Pane di Altamura DOP con crosta dorata spessa" width="800"
+                height="533" loading="lazy"></div>
+            <div class="exp-card__body">
+              <span class="exp-card__tag exp-card__tag--natura">DOP</span>
+              <h3 class="exp-card__title">Pane di Altamura DOP</h3>
+              <p class="exp-card__desc">Pane di semola di grano duro, a lievitazione naturale, con crosta dorata spessa
+                e mollica gialla. Primo pane DOP d'Italia.</p>
+            </div>
+          </article>
+          <article class="exp-card">
+            <div class="exp-card__img"><img src="" alt="Capocollo di Martina Franca affettato su tavola" width="800"
+                height="533" loading="lazy"></div>
+            <div class="exp-card__body">
+              <span class="exp-card__tag exp-card__tag--gastro">Presidio Slow Food</span>
+              <h3 class="exp-card__title">Capocollo di Martina Franca</h3>
+              <p class="exp-card__desc">Salume affumicato con erbe aromatiche locali. Presidio Slow Food, prodotto
+                secondo un disciplinare antico nella Valle d'Itria.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== VINI ===== -->
+    <section class="section" aria-labelledby="vini-title">
+      <div class="container">
+        <h2 class="section__title" id="vini-title">Vini del Barese</h2>
+        <div class="divider" aria-hidden="true"></div>
+        <div class="info-list">
+          <div class="info-list__item">
+            <div><strong>Locorotondo DOC</strong> — Bianco secco da Verdeca e Bianco d'Alessano, fresco e delicato.
+            </div>
+          </div>
+          <div class="info-list__item">
+            <div><strong>Gioia del Colle DOC</strong> — Rosso da Primitivo coltivato nell'alta Murgia barese.</div>
+          </div>
+          <div class="info-list__item">
+            <div><strong>Primitivo di Manduria DOC/DOCG</strong> — Accessibile da Bari (circa 80 km). Il grande rosso
+              pugliese per eccellenza.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PARCHI ===== -->
+    <section class="section section--alt" aria-labelledby="parchi-title">
+      <div class="container">
+        <h2 class="section__title" id="parchi-title">Parchi Naturali</h2>
+        <div class="divider" aria-hidden="true"></div>
+        <div class="info-list">
+          <div class="info-list__item">
+            <div><strong>Parco Nazionale Alta Murgia</strong> — 68.033 ettari di altopiano carsico con fauna selvatica,
+              habitat steppici e il falco grillaio.</div>
+          </div>
+          <div class="info-list__item">
+            <div><strong>Riserva Naturale Torre Guaceto</strong> — Area marina protetta tra Brindisi e Ostuni,
+              accessibile anche da Fasano.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SPORT ===== -->
+    <section class="section" aria-labelledby="sport-title">
+      <div class="container">
+        <h2 class="section__title" id="sport-title">Sport e Attività</h2>
+        <div class="divider" aria-hidden="true"></div>
+        <div class="info-list">
+          <div class="info-list__item">
+            <p>Diving e kayak a Polignano a Mare — grotte sottomarine, archi naturali</p>
+          </div>
+          <div class="info-list__item">
+            <p>Ciclovia dell'Acquedotto Pugliese — 500 km totali, tratto Valle d'Itria percorribile in bici</p>
+          </div>
+          <div class="info-list__item">
+            <p>Canale di Pirro — itinerario Alberobello-Locorotondo, 20 km per trekking e MTB</p>
+          </div>
+          <div class="info-list__item">
+            <p>Fasano Zoo Safari — secondo parco faunistico europeo per dimensioni</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== PIÈ DI PAGINA CON LINK DI NAVIGAZIONE E INFORMAZIONI GENERALI (FOOTER) ===== -->
+  <footer class="site-footer" aria-label="Piè di pagina">
+    <div class="container">
+      <div class="site-footer__grid">
+        <div class="site-footer__col">
+          <h2 class="site-footer__col-title">Link rapidi</h2>
+          <ul class="site-footer__list" role="list">
+            <li><a href="../../destinazioni/index.html" class="site-footer__link">Destinazioni</a></li>
+            <li><a href="../../esperienze/index.html" class="site-footer__link">Esperienze</a></li>
+            <li><a href="../../pianifica/index.html" class="site-footer__link">Pianifica</a></li>
+          </ul>
+        </div>
+        <div class="site-footer__col">
+          <h2 class="site-footer__col-title">Informazioni</h2>
+          <ul class="site-footer__list" role="list">
+            <li><a href="../../contatti/index.html" class="site-footer__link">Contatti</a></li>
+            <li><a href="../../contatti/index.html" class="site-footer__link">Accessibilità</a></li>
+            <li><a href="../../contatti/index.html" class="site-footer__link">Turismo sostenibile</a></li>
+            <li><a href="../../contatti/index.html" class="site-footer__link">Sitemap</a></li>
+          </ul>
+        </div>
+        <div class="site-footer__col">
+          <h2 class="site-footer__col-title">Aree geografiche</h2>
+          <ul class="site-footer__list" role="list">
+            <li><a href="../../destinazioni/gargano/index.html" class="site-footer__link">Gargano</a></li>
+            <li><a href="../../destinazioni/bari/index.html" class="site-footer__link">Bari</a></li>
+            <li><a href="../../destinazioni/bat/index.html" class="site-footer__link">BAT</a></li>
+            <li><a href="../../destinazioni/taranto/index.html" class="site-footer__link">Taranto</a></li>
+            <li><a href="../../destinazioni/brindisi/index.html" class="site-footer__link">Brindisi</a></li>
+            <li><a href="../../destinazioni/salento/index.html" class="site-footer__link">Salento</a></li>
+          </ul>
+        </div>
+        <div class="site-footer__col">
+          <a href="../../index.html" class="site-footer__logo">Puglia</a>
+          <p class="site-footer__tagline">Puglia. Dove il Sud diventa leggenda.</p>
+        </div>
+      </div>
+      <div class="site-footer__bottom">
+        <p>© 2025–2026 Vivere la Puglia</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== CARICAMENTO DELLO SCRIPT COMPORTAMENTALE DEL CAROSELLO (JAVASCRIPT SLIDER) ===== -->
+  <script src="../../assets/js/slider.js"></script>
+</body>
+
+</html>

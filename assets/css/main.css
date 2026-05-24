@@ -1,0 +1,852 @@
+/* ============================================================
+   PUGLIA TURISMO — main.css
+   Autore: Puglia Turismo
+   Versione: 1.0.0
+   Descrizione: Reset, variabili, tipografia, layout, header,
+                hero, footer, breadcrumb, media query.
+   ============================================================ */
+
+/* === RESET === */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+
+/* === CUSTOM PROPERTIES (variabili) === */
+:root {
+  /* Colori */
+  --color-primary: #54AFBC;
+  /* Azzurro Adriatico — CTA principali */
+  --color-accent: #ED7464;
+  /* Terracotta Pugliese — accenti */
+  --color-secondary: #79863C;
+  /* Verde Ulivo — navigazione secondaria */
+  --color-bg: #F0F0EC;
+  /* Bianco Calce — sfondo principale */
+  --color-text: #3D3D3D;
+  /* Grigio Pietra — testo principale */
+  --color-muted: #E8E8E4;
+  /* Grigio Chiaro — bordi, divisori */
+  --color-success: #2E7D32;
+  --color-error: #C62828;
+
+  /* Colori derivati */
+  --color-primary-dark: #005f92;
+  --color-accent-dark: #a33d27;
+  --color-hero-overlay: rgba(0, 30, 60, 0.55);
+  --color-card-shadow: rgba(0, 0, 0, 0.10);
+  --color-header-bg: rgba(250, 250, 248, 0.96);
+
+  /* Tipografia */
+  --font-heading: 'Playfair Display', Georgia, serif;
+  --font-body: 'Inter', system-ui, -apple-system, sans-serif;
+
+  /* Scale tipografica */
+  --text-h1: clamp(2rem, 5vw, 4rem);
+  --text-h2: clamp(1.5rem, 3.5vw, 3rem);
+  --text-h3: clamp(1.25rem, 2.5vw, 1.875rem);
+  --text-body: 1rem;
+  /* 16px minimo */
+  --text-small: 0.875rem;
+  /* 14px */
+
+  /* Spaziature su scala 8px */
+  --space-1: 8px;
+  --space-2: 16px;
+  --space-3: 24px;
+  --space-4: 32px;
+  --space-6: 48px;
+  --space-8: 64px;
+  --space-12: 96px;
+
+  /* Layout */
+  --container-max: 1280px;
+  --line-height-body: 1.7;
+  --line-length-max: 70ch;
+
+  /* Bordi e ombre */
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 24px;
+  --shadow-sm: 0 2px 8px var(--color-card-shadow);
+  --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.12);
+  --shadow-lg: 0 8px 40px rgba(0, 0, 0, 0.16);
+
+  /* Transizioni */
+  --transition-base: 0.25s ease;
+  --transition-slow: 0.4s ease;
+
+  /* Header */
+  --header-height: 72px;
+}
+
+
+/* === TIPOGRAFIA GLOBALE === */
+body {
+  font-family: var(--font-body);
+  font-size: var(--text-body);
+  line-height: var(--line-height-body);
+  color: var(--color-text);
+  background-color: var(--color-bg);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+  line-height: 1.2;
+  color: var(--color-text);
+  font-weight: 700;
+}
+
+h1 {
+  font-size: var(--text-h1);
+}
+
+h2 {
+  font-size: var(--text-h2);
+}
+
+h3 {
+  font-size: var(--text-h3);
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+p {
+  max-width: var(--line-length-max);
+  font-size: var(--text-body);
+  line-height: var(--line-height-body);
+}
+
+p+p {
+  margin-top: var(--space-2);
+}
+
+strong {
+  font-weight: 600;
+}
+
+/* Focus visibile per accessibilità */
+:focus-visible {
+  outline: 3px solid var(--color-primary);
+  outline-offset: 3px;
+  border-radius: var(--radius-sm);
+}
+
+
+/* === LAYOUT: container, section-wrapper === */
+.container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin-inline: auto;
+  padding-inline: var(--space-3);
+}
+
+.section {
+  padding-block: var(--space-8);
+}
+
+.section--sm {
+  padding-block: var(--space-6);
+}
+
+.section--lg {
+  padding-block: var(--space-12);
+}
+
+.section--alt {
+  background-color: #EFE0CD;
+}
+
+.section__header {
+  margin-bottom: var(--space-6);
+}
+
+.section__title {
+  color: var(--color-text);
+  margin-bottom: var(--space-2);
+}
+
+.section__subtitle {
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  color: #666;
+  max-width: 60ch;
+}
+
+.section__cta {
+  margin-top: var(--space-4);
+  text-align: center;
+}
+
+/* Testo corpo nelle sezioni di contenuto */
+.content-body {
+  max-width: var(--line-length-max);
+}
+
+.content-body p+p {
+  margin-top: var(--space-2);
+}
+
+/* Intro descrittivo pagina */
+.page-intro {
+  font-size: clamp(1rem, 2vw, 1.125rem);
+  color: #555;
+  max-width: 75ch;
+  margin-bottom: var(--space-6);
+  line-height: var(--line-height-body);
+}
+
+
+/* === HEADER E NAVIGAZIONE === */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: var(--color-header-bg);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--color-muted);
+  height: var(--header-height);
+  display: flex;
+  align-items: center;
+}
+
+.site-header--transparent {
+  background-color: transparent;
+  border-bottom-color: transparent;
+  position: absolute;
+  width: 100%;
+}
+
+.site-header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: var(--container-max);
+  margin-inline: auto;
+  padding-inline: var(--space-3);
+}
+
+/* Logo */
+.site-logo {
+  font-family: var(--font-heading);
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  letter-spacing: -0.02em;
+  text-decoration: none;
+  flex-shrink: 0.5;
+}
+
+.site-header--transparent .site-logo {
+  color: #ffffff;
+}
+
+/* Navigazione desktop */
+.site-nav {
+  display: none;
+}
+
+.site-nav__list {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+}
+
+.site-nav__link {
+  display: inline-block;
+  padding: var(--space-1) var(--space-2);
+  font-size: var(--text-body);
+  font-weight: 500;
+  color: var(--color-text);
+  border-radius: var(--radius-sm);
+  transition: color var(--transition-base), background-color var(--transition-base);
+  text-decoration: none;
+}
+
+.site-nav__link:hover,
+.site-nav__link--active {
+  color: var(--color-primary);
+  background-color: rgba(0, 119, 182, 0.08);
+}
+
+.site-header--transparent .site-nav__link {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.site-header--transparent .site-nav__link:hover {
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+/* Menu hamburger mobile (CSS only, checkbox hidden) */
+.nav-toggle {
+  display: none;
+  /* nascosto, usato solo per logic */
+}
+
+.nav-toggle-label {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 44px;
+  height: 44px;
+  cursor: pointer;
+  border-radius: var(--radius-sm);
+  transition: background-color var(--transition-base);
+}
+
+.nav-toggle-label:hover {
+  background-color: rgba(0, 0, 0, 0.06);
+}
+
+.nav-toggle-label span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background-color: var(--color-text);
+  border-radius: 2px;
+  transition: transform var(--transition-base), opacity var(--transition-base);
+}
+
+.site-header--transparent .nav-toggle-label span {
+  background-color: #ffffff;
+}
+
+/* Menu mobile overlay */
+.mobile-nav {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 999;
+  background-color: var(--color-bg);
+  padding: calc(var(--header-height) + var(--space-4)) var(--space-3) var(--space-4);
+  overflow-y: auto;
+}
+
+.mobile-nav__list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.mobile-nav__link {
+  display: block;
+  padding: var(--space-2) var(--space-3);
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: var(--color-text);
+  border-radius: var(--radius-md);
+  transition: background-color var(--transition-base), color var(--transition-base);
+  border-bottom: 1px solid var(--color-muted);
+}
+
+.mobile-nav__link:hover {
+  background-color: rgba(0, 119, 182, 0.08);
+  color: var(--color-primary);
+}
+
+/* Apertura menu mobile con checkbox */
+.nav-toggle:checked~.mobile-nav {
+  display: block;
+}
+
+/* Animazione hamburger → X */
+.nav-toggle:checked+.site-header .nav-toggle-label span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.nav-toggle:checked+.site-header .nav-toggle-label span:nth-child(2) {
+  opacity: 0;
+}
+
+.nav-toggle:checked+.site-header .nav-toggle-label span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+
+/* === HERO === */
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  background: linear-gradient(135deg, #0077B6 0%, #005f92 40%, #3A5A2A 100%);
+}
+
+.hero__bg {
+  position: absolute;
+  inset: 0;
+  background: inherit;
+  z-index: 0;
+}
+
+/* Immagine hero (quando disponibile) */
+.hero__img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.hero__overlay {
+  position: absolute;
+  inset: 0;
+  background: var(--color-hero-overlay);
+  z-index: 1;
+}
+
+.hero__content {
+  position: relative;
+  z-index: 2;
+  padding: var(--space-4) var(--space-3);
+  max-width: 800px;
+  margin-inline: auto;
+}
+
+.hero__title {
+  font-family: var(--font-heading);
+  font-size: var(--text-h1);
+  color: #ffffff;
+  line-height: 1.1;
+  margin-bottom: var(--space-3);
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
+}
+
+.hero__subtitle {
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.6;
+  margin-bottom: var(--space-6);
+  max-width: 60ch;
+  margin-inline: auto;
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.3);
+}
+
+.hero__actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-2);
+  margin-bottom: var(--space-4);
+}
+
+.hero__pills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-2);
+  margin-top: var(--space-4);
+}
+
+/* Hero compatta per pagine interne */
+.hero--compact {
+  min-height: 320px;
+  padding-top: var(--header-height);
+}
+
+.hero--compact .hero__title {
+  font-size: var(--text-h2);
+}
+
+.hero--page {
+  min-height: 260px;
+  text-align: left;
+  padding-top: var(--header-height);
+  background: linear-gradient(135deg, #0077B6 0%, #005080 100%);
+}
+
+.hero--page-green {
+  min-height: 260px;
+  text-align: left;
+  padding-top: var(--header-height);
+  background: linear-gradient(135deg, #9AAA4F 0%, var(--color-secondary)100%);
+}
+
+.hero--page .hero__content {
+  max-width: var(--container-max);
+  padding-inline: var(--space-3);
+  margin-inline: auto;
+}
+
+
+/* === FOOTER === */
+.site-footer {
+  background-color: #1a1a1a;
+  color: rgba(255, 255, 255, 0.75);
+  padding-block: var(--space-8) var(--space-4);
+  margin-top: var(--space-12);
+}
+
+.site-footer__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-6);
+  margin-bottom: var(--space-8);
+}
+
+.site-footer__col-title {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  color: #ffffff;
+  margin-bottom: var(--space-3);
+}
+
+.site-footer__list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.site-footer__link {
+  font-size: var(--text-small);
+  color: rgba(255, 255, 255, 0.65);
+  text-decoration: none;
+  transition: color var(--transition-base);
+  line-height: 1.8;
+}
+
+.site-footer__link:hover {
+  color: #ffffff;
+}
+
+.site-footer__tagline {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  color: #ffffff;
+  line-height: 1.4;
+  margin-bottom: var(--space-2);
+}
+
+.site-footer__bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  padding-top: var(--space-3);
+  text-align: center;
+  font-size: var(--text-small);
+  color: rgba(255, 255, 255, 0.45);
+}
+
+/* Logo nel footer */
+.site-footer__logo {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  color: var(--color-primary);
+  display: block;
+  margin-bottom: var(--space-2);
+}
+
+
+/* === BREADCRUMB === */
+.breadcrumb {
+  padding: var(--space-2) 0;
+  margin-bottom: var(--space-4);
+}
+
+.breadcrumb__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px;
+  list-style: none;
+}
+
+.breadcrumb__item {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: var(--text-small);
+  color: #888;
+}
+
+.breadcrumb__item:not(:last-child)::after {
+  content: '›';
+  color: var(--color-muted);
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.breadcrumb__link {
+  color: #888;
+  text-decoration: none;
+  transition: color var(--transition-base);
+}
+
+.breadcrumb__link:hover {
+  color: var(--color-primary);
+}
+
+.breadcrumb__current {
+  color: var(--color-text);
+  font-weight: 500;
+}
+
+
+/* === STAT CARD (numeri) === */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-3);
+  margin-top: var(--space-4);
+}
+
+.stat-card {
+  background: #ffffff;
+  border: 1px solid var(--color-muted);
+  border-radius: var(--radius-md);
+  padding: var(--space-4);
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+}
+
+.stat-card__number {
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 4vw, 3rem);
+  color: var(--color-primary);
+  line-height: 1;
+  margin-bottom: var(--space-1);
+}
+
+.stat-card__label {
+  font-size: var(--text-small);
+  color: #666;
+  line-height: 1.4;
+}
+
+
+/* === STAGIONI GRID === */
+.season-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-3);
+}
+
+.season-card {
+  background: #ffffff;
+  border-left: 4px solid var(--color-primary);
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  padding: var(--space-3) var(--space-4);
+  box-shadow: var(--shadow-sm);
+}
+
+.season-card__title {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  color: var(--color-text);
+  margin-bottom: var(--space-1);
+}
+
+.season-card--estate {
+  border-left-color: var(--color-accent);
+}
+
+.season-card--autunno {
+  border-left-color: var(--color-secondary);
+}
+
+.season-card--inverno {
+  border-left-color: #666;
+}
+
+/* Area list */
+.area-features {
+  margin-top: var(--space-2);
+}
+
+.area-features__list {
+  list-style: disc;
+  padding-left: var(--space-3);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.area-features__list li {
+  font-size: var(--text-small);
+  color: #555;
+}
+
+/* Elenco sezione */
+.info-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.info-list__item {
+  display: flex;
+  gap: var(--space-2);
+  align-items: flex-start;
+  padding: var(--space-2) var(--space-3);
+  background: #ffffff;
+  border: 1px solid var(--color-muted);
+  border-radius: var(--radius-md);
+  font-size: var(--text-body);
+}
+
+.info-list__item::before {
+  content: '→';
+  color: var(--color-primary);
+  font-weight: 700;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+/* Sottosezione heading */
+.subsection {
+  margin-top: var(--space-8);
+}
+
+.subsection__title {
+  color: var(--color-text);
+  margin-bottom: var(--space-4);
+  padding-bottom: var(--space-2);
+  border-bottom: 2px solid var(--color-muted);
+}
+
+/* Link di sezione */
+.section-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--color-primary);
+  font-weight: 600;
+  font-size: var(--text-body);
+  text-decoration: none;
+  transition: gap var(--transition-base), color var(--transition-base);
+}
+
+.section-link:hover {
+  gap: 10px;
+  color: var(--color-primary-dark);
+}
+
+/* Divisore decorativo */
+.divider {
+  width: 60px;
+  height: 3px;
+  background: var(--color-accent);
+  border-radius: 2px;
+  margin-top: var(--space-2);
+  margin-bottom: var(--space-4);
+}
+
+
+/* === MEDIA QUERY (min-width: 768px) === */
+@media (min-width: 768px) {
+
+  /* Layout container */
+  .container {
+    padding-inline: var(--space-4);
+  }
+
+  /* Header nav */
+  .site-nav {
+    display: flex;
+  }
+
+  .nav-toggle-label {
+    display: none;
+  }
+
+  /* Footer grid */
+  .site-footer__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Stats */
+  .stats-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  /* Season */
+  .season-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Hero actions */
+  .hero__actions {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+
+/* === MEDIA QUERY (min-width: 1024px) === */
+@media (min-width: 1024px) {
+
+  /* Footer grid 4 colonne */
+  .site-footer__grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  /* Season 4 colonne */
+  .season-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

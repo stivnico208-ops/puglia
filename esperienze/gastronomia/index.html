@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<!-- ===== INIZIO INTESTAZIONE DI METADATI (HEAD) ===== -->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gastronomia Pugliese — Un Viaggio nel Gusto | Puglia Turismo</title>
+  <meta name="description"
+    content="La gastronomia pugliese: piatti tipici, prodotti DOP e IGP, vini DOC e DOCG. Orecchiette, burrata, pasticciotto, Primitivo di Manduria e molto altro.">
+  <meta property="og:title" content="Gastronomia Pugliese — Un Viaggio nel Gusto | Puglia Turismo">
+  <meta property="og:description"
+    content="Piatti tipici, prodotti DOP/IGP e vini pugliesi: la gastronomia più ricca del Mediterraneo.">
+  <meta property="og:type" content="website">
+  <link rel="canonical" href="https://example.com/esperienze/gastronomia/">
+  <link rel="stylesheet" href="../../assets/css/main.css">
+  <link rel="stylesheet" href="../../assets/css/components.css">
+  <link rel="icon" href="../../../favicon.png" type="image/png">
+</head>
+
+<!-- ===== CORPO DELLA PAGINA (BODY) ===== -->
+
+<body>
+
+  <!-- ===== AGGANCIO LOGICA MENU MOBILE (CHECKBOX HIDDEN PER TOGGLE) ===== -->
+  <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-hidden="true">
+
+  <!-- ===== INTESTAZIONE SITO E NAVIGAZIONE PRINCIPALE (HEADER) ===== -->
+  <header class="site-header" aria-label="Intestazione sito">
+    <div class="container">
+      <a href="../../index.html" class="site-logo">Puglia</a>
+      <nav class="site-nav" aria-label="Navigazione principale">
+        <ul class="site-nav__list" role="list">
+          <li><a href="../../destinazioni/index.html" class="site-nav__link">Destinazioni</a></li>
+          <li><a href="../../esperienze/index.html" class="site-nav__link site-nav__link--active">Esperienze</a></li>
+          <li><a href="../../pianifica/index.html" class="site-nav__link">Pianifica</a></li>
+          <li><a href="../../contatti/index.html" class="site-nav__link">Contatti</a></li>
+        </ul>
+      </nav>
+      <label for="nav-toggle" class="nav-toggle-label"
+        aria-label="Apri/chiudi menu"><span></span><span></span><span></span></label>
+    </div>
+  </header>
+
+  <!-- ===== NAVIGAZIONE COLLASSABILE PER DISPOSITIVI MOBILE (MOBILE NAV OVERLAY) ===== -->
+  <nav class="mobile-nav" aria-label="Menu mobile">
+    <ul class="mobile-nav__list" role="list">
+      <li><a href="../../destinazioni/index.html" class="mobile-nav__link">Destinazioni</a></li>
+      <li><a href="../../esperienze/index.html" class="mobile-nav__link">Esperienze</a></li>
+      <li><a href="../../pianifica/index.html" class="mobile-nav__link">Pianifica</a></li>
+      <li><a href="../../contatti/index.html" class="mobile-nav__link">Contatti</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===== CONTENUTO PRINCIPALE DELLA PAGINA (MAIN CONTENT) ===== -->
+  <main id="main-content">
+
+    <!-- ===== COPERTINA DI BENVENUTO / SEZIONE INIZIALE (HERO) ===== -->
+    <section class="hero hero--page" aria-labelledby="page-title">
+      <div class="hero__overlay"></div>
+      <div class="hero__content">
+        <div class="container">
+          <h1 class="hero__title" id="page-title">Gastronomia Pugliese — Un Viaggio nel Gusto</h1>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTRO -->
+    <section class="section section--sm">
+      <div class="container">
+        <p class="page-intro">La Puglia è la seconda regione italiana per produzione di olio d'oliva. La sua gastronomia
+          è tra le più ricche del Mediterraneo: prodotti DOP e IGP, pasta fresca fatta a mano, formaggi unici, vini di
+          carattere. Non è cucina di moda: è cucina di territorio, costruita in secoli di agricoltura e pesca, che mette
+          al centro la qualità della materia prima.</p>
+      </div>
+    </section>
+
+    <!-- PIATTI SIMBOLO -->
+    <section class="section section--alt" aria-labelledby="piatti-title">
+      <div class="container">
+        <h2 class="section__title" id="piatti-title">Piatti Simbolo</h2>
+        <div class="divider" aria-hidden="true"></div>
+
+        <h3
+          style="font-size:1rem; font-family:var(--font-body); font-weight:700; color:var(--color-primary); margin-bottom:var(--space-3); text-transform:uppercase; letter-spacing:0.05em;">
+          Dal Gargano e Foggia</h3>
+        <div class="exp-grid slider-track" style="margin-bottom:var(--space-6);">
+          <article class="exp-card">
+            <div class="exp-card__img"><img src="../../assets/img/gastronomia/orecchiette.jpg"
+                alt="Orecchiette con cime di rapa" width="800" height="533" loading="lazy"></div>
+            <div class="exp-card__body"><span class="exp-card__tag exp-card__tag--gastro">Primo</span>
+              <h3 class="exp-card__title">Orecchiette con Cime di Rapa</h3>
+              <p class="exp-card__desc">Il piatto simbolo della Puglia intera. Pasta fresca a forma di orecchia con cime
+                di rapa ripassate in aglio, olio e acciughe.</p>
+            </div>
+          </article>
+          <article class="exp-card">
+            <div class="exp-card__img"><img src="../../assets/img/gastronomia/tiella.jpeg"
+                alt="Tiella di riso patate e cozze nel tegame" width="800" height="533" loading="lazy"></div>
+            <div class="exp-card__body"><span class="exp-card__tag exp-card__tag--gastro">Primo</span>
+              <h3 class="exp-card__title">Tiella di Riso, Patate e Cozze</h3>
+              <p class="exp-card__desc">Riso, patate, cozze e pomodoro cotti lentamente in tegame di terracotta. Piatto
+                povero della tradizione garganica.</p>
+            </div>
+          </article>
+          <article class="exp-card">
+            <div class="exp-card__img"><img src="../../assets/img/gastronomia/laganelle.jpg"
+                alt="Laganelle e ceci in zuppiera" width="800" height="533" loading="lazy"></div>
+            <div class="exp-card__body"><span class="exp-card__tag exp-card__tag--gastro">Primo</span>
+              <h3 class="exp-card__title">Laganelle e Ceci</h3>
+              <p class="exp-card__desc">Pasta fresca tirata a mano con ceci, rosmarino e olio. Piatto della tradizione
+                contadina foggiana.</p>
+            </div>
+          </article>
+          <article class="exp-card">
+            <div class="exp-card__img"><img src="../../assets/img/gastronomia/zuppa-pesce.jpg"
+                alt="Zuppa di pesce alla garganica nel tegame" width="800" height="533" loading="lazy"></div>
+            <div class="exp-card__body"><span class="exp-card__tag exp-card__tag--gastro">Mare</span>
+              <h3 class="exp-card__title">Zuppa di Pesce alla Garganica</h3>
+              <p class="exp-card__desc">Brodetto dell'Adriatico con pesce fresco, pomodori e olio Dauno DOP.</p>
+            </div>
+          </article>
+          <article class="exp-card">
+            <div class="exp-card__img"><img src="../../assets/img/gastronomia/focaccia-pugliese.jpg"
+                alt="Focaccia pugliese alta con olive" width="800" height="533" loading="lazy"></div>
+            <div class="exp-card__body"><span class="exp-card__tag exp-card__tag--gastro">Street food</span>
+              <h3 class="exp-card__title">Focaccia Pugliese</h3>
+              <p class="exp-card__desc">Alta e morbida, con olive nere e pomodorini. Base dell'alimentazione quotidiana
+                in tutta la regione.</p>
+            </div>
+          </article>
+          <article class="exp-card">
+            <div class="exp-card__img"><img src="../../assets/img/gastronomia/ostriche.jpg"
+                alt="Ostriche del lago di Varano su ghiaccio" width="800" height="533" loading="lazy"></div>
+            <div class="exp-card__body"><span class="exp-card__tag exp-card__tag--gastro">Mare</span>
+              <h3 class="exp-card__title">Ostriche e Mitili del Lago di Varano</h3>
+              <p class="exp-card__desc">Allevati nelle acque salmastre del Lago di Varano. Sapore iodato e delicato, tra
+                i migliori d'Italia.</p>
+            </div>
+          </article>
+        </div>
+        <!-- Link destinazione Gargano -->
+        <div style="display:flex; justify-content:flex-end; margin-top:var(--space-2); margin-bottom:var(--space-6);">
+          <a href="../../destinazioni/gargano/index.html" class="section-link" id="link-dest-gargano">→ Esplora il
+            Gargano e Foggia</a>
+        </div>
+
+        <h3
+          style="font-size:1rem; font-family:var(--font-body); font-weight:700; color:var(--color-primary); margin-bottom:var(--space-3); text-transform:uppercase; letter-spacing:0.05em;">
+          Da Bari e Città Metropolitana</h3>
+        <div class="exp-grid slider-track" style="margin-bottom:var(--space-6);">
+          <article class="exp-card">
+            <div class="exp-card__img"><img src="../../assets/img/gastronomia/focaccia-barese.jpg"
+                alt="Focaccia barese alta con olive Caggia e pomodorini" width="800" height="533" loading="lazy"></div>
+            <div class="exp-card__body"><span class="exp-card__tag exp-card__tag--gastro">Street food</span>
+              <h3 class="exp-card__title">Focaccia Barese</h3>
+              <p class="exp-card__desc">Alta, morbida, olive nere Caggia e pomodorini. Impasto con acqua di patate. La
+                focaccia più famosa d'Italia.</p>
+            </div>
+          </article>
+          <article class="exp-card">
+            <div class="exp-card__img"><img src="../../assets/img/gastronomia/panzerotto.jpg"
+                alt="Panzerotto fritto dorato con ripieno di pomodoro e mozzarella" width="800" height="533"
+                loading="lazy"></div>
+            <div class="exp-card__body"><span class="exp-card__tag exp-card__tag--gastro">Street food</span>
+              <h3 class="exp-card__title">Panzerotto</h3>
+              <p class="exp-card__desc">Pasta di pane fritta, ripiena di pomodoro e mozzarella. Lo street food simbolo
+                di Bari.</p>
+            </div>
+          </article>
+          <article class="exp-card">
+            <div class="exp-card__img"><img src="../../assets/img/gastronomia/bombette.jpg"
+                alt="Bombette di Cisternino alla brace" width="800" height="533" loading="lazy"></div>
+            <div class="exp-card__body"><span class="exp-card__tag exp-card__tag--gastro">Carne</span>
+              <h3 class="exp-card__title">Bombette di Cisternino</h3>
+              <p class="exp-card__desc">Involtini di capocollo ripieni di caciocavallo. Cotti alla brace nelle
+                macellerie-fornello della Valle d'Itria.</p>
+            </div>
+          </article>
+          <article class="exp-card">
+            <div class="exp-card__img"><img src="../../assets/img/gastronomia/brasciole.jpg"
+                alt="Brasciole al sugo nel tegame" width="800" height="533" loading="lazy"></div>
+            <div class="exp-card__body"><span class="exp-card__tag exp-card__tag--gastro">Carne</span>
+              <h3 class="exp-card__title">Brasciole al Sugo</h3>
+              <p class="exp-card__desc">Involtini di carne di cavallo o manzo cotti lentamente nel sugo di pomodoro.
+                Domenica pugliese per eccellenza.</p>
+            </div>
+          </article>
+          <article class="exp-card">
+            <div class="exp-card__img"><img src="../../assets/img/gastronomia/pettole.jpg"
+                alt="Pettole fritte dorate su carta assorbente" width="800" height="533" loading="lazy"></div>
+            <div class="exp-card__body"><span class="exp-card__tag exp-card__tag--gastro">Street food</span>
+              <h3 class="exp-card__title">Pettole</h3>
+              <p class="exp-card__desc">Impasto lievitato fritto. Dolci con miele o salate con acciughe. Tipiche del
+                periodo natalizio barese.</p>
+            </div>
+          </article>
+        </div>
+        <!-- Link destinazione Bari -->
+        <div style="display:flex; justify-content:flex-end; margin-top:var(--space-2); margin-bottom:var(--space-6);">
+          <a href="../../destinazioni/bari/index.html" class="section-link" id="link-dest-bari">→ Esplora Bari e Città
+            Metropolitana</a>
+        </div>
+
+        <h3
+          style="font-size:1rem; font-family:var(--font-body); font-weight:700; color:var(--color-primary); margin-bottom:var(--space-3); text-transform:uppercase; letter-spacing:0.05em;">
+          Da Taranto e Costa Ionica</h3>
+        <div class="exp-grid slider-track" style="margin-bottom:var(--space-6);">
+          <article class="exp-card">
+            <div class="exp-card__img"><img src="../../assets/img/gastronomia/cozze.jpg"
+                alt="Cozze tarantine nel tegame alla tarantina" width="800" height="533" loading="lazy"></div>
+            <div class="exp-card__body"><span class="exp-card__tag exp-card__tag--gastro">Mare</span>
+              <h3 class="exp-card__title">Cozze Tarantine alla Tarantina</h3>
+              <p class="exp-card__desc">Allevate nel Mar Piccolo, considerate le migliori d'Italia: grandi, carnose, dal
+                sapore dolce e iodato.</p>
+            </div>
+          </article>
+          <article class="exp-card">
+            <div class="exp-card__img"><img src="../../assets/img/gastronomia/gnummareddi.jpg"
+                alt="Gnummareddi alla brace su griglia" width="800" height="533" loading="lazy"></div>
+            <div class="exp-card__body"><span class="exp-card__tag exp-card__tag--gastro">Carne</span>
+              <h3 class="exp-card__title">Gnummareddi</h3>
+              <p class="exp-card__desc">Interiora di agnello avvolte e cotte alla brace. Piatto della tradizione
+                pastorale tarantina.</p>
+            </div>
+          </article>
+          <article class="exp-card">
+            <div class="exp-card__img"><img src="../../assets/img/gastronomia/peperoni.jpg"
+                alt="Peperoni cruschi croccanti su piatto" width="800" height="533" loading="lazy"></div>
+            <div class="exp-card__body"><span class="exp-card__tag exp-card__tag--gastro">Contorno</span>
+              <h3 class="exp-card__title">Peperoni Cruschi</h3>
+              <p class="exp-card__desc">Peperoni secchi fritti nell'olio finché croccanti. Condimento versatile della
+                cucina ionica.</p>
+            </div>
+          </article>
+          <article class="exp-card">
+            <div class="exp-card__img"><img src="../../assets/img/gastronomia/taralli.jpg"
+                alt="Taralli dolci di Taranto glassati in bianco" width="800" height="533" loading="lazy"></div>
+            <div class="exp-card__body"><span class="exp-card__tag exp-card__tag--gastro">Dolci</span>
+              <h3 class="exp-card__title">Taralli Dolci di Taranto</h3>
+              <p class="exp-card__desc">Con glassa di zucchero bianca, tipici delle festività. Friabili e profumati di
+                anice.</p>
+            </div>
+          </article>
+        </div>
+        <!-- Link destinazione Taranto -->
+        <div style="display:flex; justify-content:flex-end; margin-top:var(--space-2); margin-bottom:var(--space-6);">
+          <a href="../../destinazioni/taranto/index.html" class="section-link" id="link-dest-taranto">→ Esplora Taranto
+            e Costa Ionica</a>
+        </div>
+
+        <h3
+          style="font-size:1rem; font-family:var(--font-body); font-weight:700; color:var(--color-primary); margin-bottom:var(--space-3); text-transform:uppercase; letter-spacing:0.05em;">
+          Dal Salento — Lecce</h3>
+        <div class="exp-grid slider-track">
+          <article class="exp-card">
+            <div class="exp-card__img"><img src="../../assets/img/gastronomia/pasticciotto.jpg"
+                alt="Pasticciotto leccese su piatto di ceramica" width="800" height="533" loading="lazy"></div>
+            <div class="exp-card__body"><span class="exp-card__tag exp-card__tag--gastro">Dolci</span>
+              <h3 class="exp-card__title">Pasticciotto Leccese</h3>
+              <p class="exp-card__desc">Pasta frolla, crema pasticcera. Inventato nel 1745 a Galatina. Il più famoso:
+                Bar Alvino, Piazza Sant'Oronzo, Lecce.</p>
+            </div>
+          </article>
+          <article class="exp-card">
+            <div class="exp-card__img"><img src="../../assets/img/gastronomia/rustico.jpg"
+                alt="Rustico leccese sfogliato caldo" width="800" height="533" loading="lazy"></div>
+            <div class="exp-card__body"><span class="exp-card__tag exp-card__tag--gastro">Street food</span>
+              <h3 class="exp-card__title">Rustico Leccese</h3>
+              <p class="exp-card__desc">Sfoglia ripiena di besciamella, mozzarella e pomodoro. Lo street food di Lecce
+                per eccellenza.</p>
+            </div>
+          </article>
+          <article class="exp-card">
+            <div class="exp-card__img"><img src="../../assets/img/gastronomia/freselle.jpg"
+                alt="Frisella con pomodoro olio e origano su tavola di legno" width="800" height="533" loading="lazy">
+            </div>
+            <div class="exp-card__body"><span class="exp-card__tag exp-card__tag--gastro">Antipasto</span>
+              <h3 class="exp-card__title">Frisella</h3>
+              <p class="exp-card__desc">Ciambella biscottata ammollata in acqua, condita con olio e pomodoro fresco.
+                Colazione estiva salentina.</p>
+            </div>
+          </article>
+          <article class="exp-card">
+            <div class="exp-card__img"><img src="../../assets/img/gastronomia/scapece.jpg"
+                alt="Scapece gallipolina con zafferano in vassoio" width="800" height="533" loading="lazy"></div>
+            <div class="exp-card__body"><span class="exp-card__tag exp-card__tag--gastro">Mare</span>
+              <h3 class="exp-card__title">Scapece Gallipolina</h3>
+              <p class="exp-card__desc">Pesce fritto conservato in aceto e zafferano. Antico metodo di conservazione
+                tipico di Gallipoli.</p>
+            </div>
+          </article>
+          <article class="exp-card">
+            <div class="exp-card__img"><img src="../../assets/img/gastronomia/caffe.jpg"
+                alt="Caffè in ghiaccio con latte di mandorla in bicchiere alto" width="800" height="533" loading="lazy">
+            </div>
+            <div class="exp-card__body"><span class="exp-card__tag exp-card__tag--gastro">Bevanda</span>
+              <h3 class="exp-card__title">Caffè in Ghiaccio con Latte di Mandorla</h3>
+              <p class="exp-card__desc">La bevanda estiva di Lecce: espresso freddo con latte di mandorla e ghiaccio.
+                Una tradizione unica.</p>
+            </div>
+          </article>
+          <article class="exp-card">
+            <div class="exp-card__img"><img src="../../assets/img/gastronomia/spumone.jpg"
+                alt="Spumone salentino di mandorla affettato" width="800" height="533" loading="lazy"></div>
+            <div class="exp-card__body"><span class="exp-card__tag exp-card__tag--gastro">Dolci</span>
+              <h3 class="exp-card__title">Spumone Salentino</h3>
+              <p class="exp-card__desc">Gelato semifreddo di mandorla tipico del Salento. Nelle pasticcerie tradizionali
+                di Lecce e Galatina.</p>
+            </div>
+          </article>
+        </div>
+        <!-- Link destinazione Salento -->
+        <div style="display:flex; justify-content:flex-end; margin-top:var(--space-2); margin-bottom:var(--space-2);">
+          <a href="../../destinazioni/salento/index.html" class="section-link" id="link-dest-salento">→ Esplora il
+            Salento</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODOTTI DOP IGP -->
+    <section class="section" aria-labelledby="dop-title">
+      <div class="container">
+        <h2 class="section__title" id="dop-title">Prodotti DOP e IGP</h2>
+        <div class="divider" aria-hidden="true"></div>
+        <div class="info-list">
+          <div class="info-list__item">
+            <div><strong>Burrata di Andria IGP</strong> — Il formaggio fresco più famoso del Sud Italia.</div>
+          </div>
+          <div class="info-list__item">
+            <div><strong>Pane di Altamura DOP</strong> — Primo pane a ottenere la DOP in Europa.</div>
+          </div>
+          <div class="info-list__item">
+            <div><strong>Sale di Margherita di Savoia DOP</strong> — Dalle più grandi saline d'Europa.</div>
+          </div>
+          <div class="info-list__item">
+            <div><strong>Olio Dauno DOP</strong> — Extravergine del foggiano, cultivar Ogliarola Garganica.</div>
+          </div>
+          <div class="info-list__item">
+            <div><strong>Olio Terra di Bari DOP</strong> — Cultivar Coratina e Ogliarola Barese.</div>
+          </div>
+          <div class="info-list__item">
+            <div><strong>Olio Castel del Monte DOP</strong> — Cultivar Coratina, ricchissimo di polifenoli.</div>
+          </div>
+          <div class="info-list__item">
+            <div><strong>Olio Terre Tarentine DOP</strong> — Extravergine della provincia jonica.</div>
+          </div>
+          <div class="info-list__item">
+            <div><strong>Arance Bionde del Gargano IGP</strong> — Varietà antiche degli agrumeti di Vico del Gargano.
+            </div>
+          </div>
+          <div class="info-list__item">
+            <div><strong>Limone Femminello del Gargano IGP</strong> — Limone dalla buccia spessa e profumata.</div>
+          </div>
+          <div class="info-list__item">
+            <div><strong>Capocollo di Martina Franca</strong> — Presidio Slow Food, affumicato con erbe locali.</div>
+          </div>
+          <div class="info-list__item">
+            <div><strong>Mandorle di Toritto</strong> — Presidio Slow Food, cultivar rare dell'entroterra barese.</div>
+          </div>
+          <div class="info-list__item">
+            <div><strong>Caciocavallo Podolico</strong> — Presidio Slow Food, prodotto da latte di vacca Podolica.</div>
+          </div>
+          <div class="info-list__item">
+            <div><strong>Soppressata di Alberobello</strong> — Presidio Slow Food, salume speziato della Valle d'Itria.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VINI -->
+    <section class="section section--alt" aria-labelledby="vini-title">
+      <div class="container">
+        <h2 class="section__title" id="vini-title">Vini di Puglia</h2>
+        <div class="divider" aria-hidden="true"></div>
+        <div class="info-list">
+          <div class="info-list__item">
+            <div><strong>Primitivo di Manduria DOC/DOCG</strong> — Il grande rosso pugliese. Anche nella versione Dolce
+              Naturale DOCG.</div>
+          </div>
+          <div class="info-list__item">
+            <div><strong>Salice Salentino DOC</strong> — Da Negroamaro, rosso strutturato del Salento.</div>
+          </div>
+          <div class="info-list__item">
+            <div><strong>Locorotondo DOC</strong> — Bianco fresco da Verdeca e Bianco d'Alessano.</div>
+          </div>
+          <div class="info-list__item">
+            <div><strong>San Severo DOC</strong> — Bianco e rosso del foggiano.</div>
+          </div>
+          <div class="info-list__item">
+            <div><strong>Cacc'e Mmitte di Lucera DOC</strong> — Rosso tipico dell'area di Lucera.</div>
+          </div>
+          <div class="info-list__item">
+            <div><strong>Gioia del Colle DOC</strong> — Primitivo dell'alta Murgia barese.</div>
+          </div>
+          <div class="info-list__item">
+            <div><strong>Castel del Monte DOC</strong> — Rosso, rosato e bianco dall'area andriese.</div>
+          </div>
+          <div class="info-list__item">
+            <div><strong>Moscato di Trani DOC</strong> — Vino dolce passito, Presidio Slow Food.</div>
+          </div>
+          <div class="info-list__item">
+            <div><strong>Negroamaro IGT Salento</strong> — Vitigno autoctono principe del Salento.</div>
+          </div>
+          <div class="info-list__item">
+            <div><strong>Susumaniello IGT</strong> — Vitigno rarissimo in via di riscoperta.</div>
+          </div>
+          <div class="info-list__item">
+            <div><strong>Aleatico di Puglia DOC</strong> — Rosso dolce aromatico.</div>
+          </div>
+          <div class="info-list__item">
+            <div><strong>Rosato del Salento</strong> — Fama internazionale, colore buccia di cipolla.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== PIÈ DI PAGINA CON LINK DI NAVIGAZIONE E INFORMAZIONI GENERALI (FOOTER) ===== -->
+  <footer class="site-footer" aria-label="Piè di pagina">
+    <div class="container">
+      <div class="site-footer__grid">
+        <div class="site-footer__col">
+          <h2 class="site-footer__col-title">Link rapidi</h2>
+          <ul class="site-footer__list" role="list">
+            <li><a href="../../destinazioni/index.html" class="site-footer__link">Destinazioni</a></li>
+            <li><a href="../../esperienze/index.html" class="site-footer__link">Esperienze</a></li>
+            <li><a href="../../pianifica/index.html" class="site-footer__link">Pianifica</a></li>
+          </ul>
+        </div>
+        <div class="site-footer__col">
+          <h2 class="site-footer__col-title">Informazioni</h2>
+          <ul class="site-footer__list" role="list">
+            <li><a href="../../contatti/index.html" class="site-footer__link">Contatti</a></li>
+            <li><a href="../../contatti/index.html" class="site-footer__link">Accessibilità</a></li>
+            <li><a href="../../contatti/index.html" class="site-footer__link">Turismo sostenibile</a></li>
+            <li><a href="../../contatti/index.html" class="site-footer__link">Sitemap</a></li>
+          </ul>
+        </div>
+        <div class="site-footer__col">
+          <h2 class="site-footer__col-title">Aree geografiche</h2>
+          <ul class="site-footer__list" role="list">
+            <li><a href="../../destinazioni/gargano/index.html" class="site-footer__link">Gargano</a></li>
+            <li><a href="../../destinazioni/bari/index.html" class="site-footer__link">Bari</a></li>
+            <li><a href="../../destinazioni/bat/index.html" class="site-footer__link">BAT</a></li>
+            <li><a href="../../destinazioni/taranto/index.html" class="site-footer__link">Taranto</a></li>
+            <li><a href="../../destinazioni/brindisi/index.html" class="site-footer__link">Brindisi</a></li>
+            <li><a href="../../destinazioni/salento/index.html" class="site-footer__link">Salento</a></li>
+          </ul>
+        </div>
+        <div class="site-footer__col">
+          <a href="../../index.html" class="site-footer__logo">Puglia</a>
+          <p class="site-footer__tagline">Puglia. Dove il Sud diventa leggenda.</p>
+        </div>
+      </div>
+      <div class="site-footer__bottom">
+        <p>© 2025–2026 Vivere la Puglia</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== CARICAMENTO DELLO SCRIPT COMPORTAMENTALE DEL CAROSELLO (JAVASCRIPT SLIDER) ===== -->
+  <script src="../../assets/js/slider.js"></script>
+</body>
+
+</html>

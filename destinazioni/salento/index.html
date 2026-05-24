@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<!-- ===== INIZIO INTESTAZIONE DI METADATI (HEAD) ===== -->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Salento — Due Mari, Un'Anima | Puglia Turismo</title>
+  <meta name="description"
+    content="Scopri il Salento: Lecce barocca, Gallipoli, Otranto, le Maldive del Salento, la Notte della Taranta e i migliori vini pugliesi. Guida completa.">
+  <meta property="og:title" content="Salento — Due Mari, Un'Anima | Puglia Turismo">
+  <meta property="og:description"
+    content="Scopri il Salento: Lecce barocca, Gallipoli, Otranto, le Maldive del Salento e la Notte della Taranta.">
+  <meta property="og:type" content="website">
+  <link rel="canonical" href="https://example.com/destinazioni/salento/">
+  <link rel="stylesheet" href="../../assets/css/main.css">
+  <link rel="stylesheet" href="../../assets/css/components.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=museum" />
+  <link rel="icon" href="../../../favicon.png" type="image/png">
+</head>
+
+<!-- ===== CORPO DELLA PAGINA (BODY) ===== -->
+
+<body>
+
+  <!-- ===== AGGANCIO LOGICA MENU MOBILE (CHECKBOX HIDDEN PER TOGGLE) ===== -->
+  <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-hidden="true">
+
+  <!-- ===== INTESTAZIONE SITO E NAVIGAZIONE PRINCIPALE (HEADER) ===== -->
+  <header class="site-header" aria-label="Intestazione sito">
+    <div class="container">
+      <a href="../../index.html" class="site-logo">Puglia</a>
+      <nav class="site-nav" aria-label="Navigazione principale">
+        <ul class="site-nav__list" role="list">
+          <li><a href="../../destinazioni/index.html" class="site-nav__link site-nav__link--active">Destinazioni</a>
+          </li>
+          <li><a href="../../esperienze/index.html" class="site-nav__link">Esperienze</a></li>
+          <li><a href="../../pianifica/index.html" class="site-nav__link">Pianifica</a></li>
+          <li><a href="../../contatti/index.html" class="site-nav__link">Contatti</a></li>
+        </ul>
+      </nav>
+      <label for="nav-toggle" class="nav-toggle-label"
+        aria-label="Apri/chiudi menu"><span></span><span></span><span></span></label>
+    </div>
+  </header>
+
+  <!-- ===== NAVIGAZIONE COLLASSABILE PER DISPOSITIVI MOBILE (MOBILE NAV OVERLAY) ===== -->
+  <nav class="mobile-nav" aria-label="Menu mobile">
+    <ul class="mobile-nav__list" role="list">
+      <li><a href="../../destinazioni/index.html" class="mobile-nav__link">Destinazioni</a></li>
+      <li><a href="../../esperienze/index.html" class="mobile-nav__link">Esperienze</a></li>
+      <li><a href="../../pianifica/index.html" class="mobile-nav__link">Pianifica</a></li>
+      <li><a href="../../contatti/index.html" class="mobile-nav__link">Contatti</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===== CONTENUTO PRINCIPALE DELLA PAGINA (MAIN CONTENT) ===== -->
+  <main id="main-content">
+
+    <!-- ===== COPERTINA DI BENVENUTO / SEZIONE INIZIALE (HERO) ===== -->
+    <section class="hero hero--page" aria-labelledby="page-title">
+      <div class="hero__overlay"></div>
+      <div class="hero__content">
+        <div class="container">
+          <h1 class="hero__title" id="page-title">Salento — Due Mari, Un'Anima</h1>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTRO -->
+    <section class="section section--sm">
+      <div class="container">
+        <p class="area-intro__text">Il Salento è la penisola più meridionale della Puglia, bagnata a est dall'Adriatico
+          e a ovest dallo Ionio. Comprende la provincia di Lecce e porzioni di Brindisi e Taranto. Lecce, soprannominata
+          "la Firenze del Sud", è capitale del barocco pugliese: le chiese e i palazzi sono intagliati nella tenera
+          pietra leccese color miele. Gallipoli è una città su un'isola calcarea, Otranto è il punto più orientale
+          d'Italia. In estate il Salento si trasforma nel cuore della movida pugliese; d'inverno rivela i suoi borghi
+          senza folla e la sua gastronomia autentica.</p>
+      </div>
+    </section>
+
+    <!-- SPIAGGE ADRIATICHE -->
+    <section class="section section--alt" aria-labelledby="adriatico-title">
+      <div class="container">
+        <h2 class="section__title" id="adriatico-title">Spiagge Adriatiche</h2>
+        <div class="divider" aria-hidden="true"></div>
+        <div class="beach-list slider-track">
+          <article class="beach-card">
+            <div class="beach-card__img"><img src="" alt="Faraglioni Le Due Sorelle a Torre dell'Orso con acque azzurre"
+                width="800" height="450" loading="lazy"></div>
+            <div class="beach-card__body">
+              <h3 class="beach-card__title">Torre dell'Orso</h3>
+              <p class="beach-card__desc">I faraglioni "Le Due Sorelle" e acque azzurre. Spiaggia lunga di sabbia
+                bianca, uno dei litorali più fotogenici del Salento adriatico.</p>
+            </div>
+          </article>
+          <article class="beach-card">
+            <div class="beach-card__img"><img src="" alt="Sabbia bianca e pini marittimi di Baia dei Turchi a Otranto"
+                width="800" height="450" loading="lazy"></div>
+            <div class="beach-card__body">
+              <h3 class="beach-card__title">Baia dei Turchi — Otranto</h3>
+              <p class="beach-card__desc">La spiaggia simbolo del Salento adriatico: sabbia bianchissima e pini
+                marittimi, raggiungibile a piedi attraverso una pineta.</p>
+            </div>
+          </article>
+          <article class="beach-card">
+            <div class="beach-card__img"><img src="" alt="Archi naturali e faraglioni calcari di Torre Sant'Andrea"
+                width="800" height="450" loading="lazy"></div>
+            <div class="beach-card__body">
+              <h3 class="beach-card__title">Torre Sant'Andrea — Melendugno</h3>
+              <p class="beach-card__desc">Archi e faraglioni naturali di roccia calcarea plasmati dal mare. Acque verde
+                smeraldo di rara bellezza.</p>
+            </div>
+          </article>
+          <article class="beach-card">
+            <div class="beach-card__img"><img src="" alt="La piccola baia di Porto Badisco con acque trasparenti"
+                width="800" height="450" loading="lazy"></div>
+            <div class="beach-card__body">
+              <h3 class="beach-card__title">Porto Badisco — Otranto</h3>
+              <p class="beach-card__desc">Secondo la leggenda qui approdò Enea. Snorkeling eccellente tra le rocce
+                calcaree e fondali ricchi di fauna marina.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SPIAGGE IONICHE -->
+    <section class="section" aria-labelledby="ionico-title">
+      <div class="container">
+        <h2 class="section__title" id="ionico-title">Spiagge Ioniche</h2>
+        <div class="divider" aria-hidden="true"></div>
+        <div class="beach-list slider-track">
+          <article class="beach-card">
+            <div class="beach-card__img"><img src="" alt="Sabbia bianchissima delle Maldive del Salento a Pescoluse"
+                width="800" height="450" loading="lazy"></div>
+            <div class="beach-card__body">
+              <h3 class="beach-card__title">Pescoluse — Maldive del Salento</h3>
+              <p class="beach-card__desc">Sabbia bianca finissima, mare caraibico, fondali bassi per 200 m. Il tratto di
+                costa più celebre dello Ionio salentino.</p>
+            </div>
+          </article>
+          <article class="beach-card">
+            <div class="beach-card__img"><img src=""
+                alt="Spiaggia della Purità a Gallipoli nel cuore della città storica" width="800" height="450"
+                loading="lazy"></div>
+            <div class="beach-card__body">
+              <h3 class="beach-card__title">Spiaggia della Purità — Gallipoli</h3>
+              <p class="beach-card__desc">Nel cuore della città storica, sabbia dorata a pochi passi dalle mura
+                medievali. La spiaggia urbana più bella di Puglia.</p>
+            </div>
+          </article>
+          <article class="beach-card">
+            <div class="beach-card__img"><img src="" alt="Pineta di Porto Selvaggio con sentiero verso il mare"
+                width="800" height="450" loading="lazy"></div>
+            <div class="beach-card__body">
+              <h3 class="beach-card__title">Porto Selvaggio — Nardò</h3>
+              <p class="beach-card__desc">Raggiungibile solo a piedi, 20 min nella pineta. Nessuna strada carrozzabile.
+                Parco Naturale Regionale. Selvaggia e meravigliosa.</p>
+            </div>
+          </article>
+          <article class="beach-card">
+            <div class="beach-card__img"><img src="" alt="Dune protette di Punta Prosciutto a Porto Cesareo" width="800"
+                height="450" loading="lazy"></div>
+            <div class="beach-card__body">
+              <h3 class="beach-card__title">Punta Prosciutto — Porto Cesareo</h3>
+              <p class="beach-card__desc">Dune di sabbia bianca protette, area marina protetta, acque turchesi. Tra le
+                più belle spiagge dello Ionio.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- BORGHI -->
+    <section class="section section--alt" aria-labelledby="borghi-title">
+      <div class="container">
+        <h2 class="section__title" id="borghi-title">Borghi e Città</h2>
+        <div class="divider" aria-hidden="true"></div>
+        <div class="borgo-list slider-track">
+          <article class="borgo-card">
+            <h3 class="borgo-card__title">Lecce</h3>
+            <p class="borgo-card__desc">Basilica di Santa Croce (1549–1695), Piazza del Duomo, Anfiteatro Romano del II
+              sec. d.C. La pietra leccese color miele è lavorata come fosse creta dagli artigiani.</p>
+          </article>
+          <article class="borgo-card">
+            <h3 class="borgo-card__title">Gallipoli</h3>
+            <p class="borgo-card__desc">"Bella" (dal greco). Isola calcarea collegata da un ponte, Fontana Greca del II
+              sec. a.C., frantoio ipogeo del XVI sec. La "Ibiza del Sud" in estate.</p>
+          </article>
+          <article class="borgo-card">
+            <h3 class="borgo-card__title">Otranto</h3>
+            <p class="borgo-card__desc">Punto più orientale d'Italia. La Cattedrale del XII sec. conserva il mosaico
+              "Albero della Vita" (800 mq), il più grande mosaico pavimentale medievale al mondo. Castello Aragonese del
+              XV sec.</p>
+          </article>
+          <article class="borgo-card">
+            <h3 class="borgo-card__title">Nardò</h3>
+            <p class="borgo-card__desc">Piazza ottagona progettata da Antonio Braccio nel XVII sec., una delle più belle
+              e armoniose d'Italia. Centro storico ricco di architettura barocca.</p>
+          </article>
+          <article class="borgo-card">
+            <h3 class="borgo-card__title">Galatina</h3>
+            <p class="borgo-card__desc">La Basilica di Santa Caterina d'Alessandria (XIV–XV sec.) conserva un ciclo di
+              affreschi gotici completi unico nel Sud Italia. Patria del pasticciotto leccese.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- GROTTE -->
+    <section class="section" aria-labelledby="grotte-title">
+      <div class="container">
+        <h2 class="section__title" id="grotte-title">Grotte Naturali</h2>
+        <div class="divider" aria-hidden="true"></div>
+        <div class="info-list">
+          <div class="info-list__item">
+            <div>
+              <strong>Grotta Zinzulusa — Castro</strong><br>
+              <span style="font-size:var(--text-small);color:#666;">Tre caverne, stalattiti e stalagmiti, laghetto
+                interno con fauna endemica cieca (Typhlocaris salentina). Visita guidata disponibile.</span>
+            </div>
+          </div>
+          <div class="info-list__item">
+            <div>
+              <strong>Grotta della Poesia — Roca Vecchia</strong><br>
+              <span style="font-size:var(--text-small);color:#666;">Piscina naturale nel mare, incisioni rupestri
+                dell'Età del Bronzo. Il santuario epigrafico più grande del Mediterraneo con oltre 3500
+                iscrizioni.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GASTRONOMIA -->
+    <section class="section section--alt" aria-labelledby="gastro-title">
+      <div class="container">
+        <h2 class="section__title" id="gastro-title">Gastronomia Salentina</h2>
+        <div class="divider" aria-hidden="true"></div>
+        <div class="exp-grid slider-track">
+          <article class="exp-card">
+            <div class="exp-card__img"><img src="" alt="Pasticciotto leccese con crema pasticcera su piatto" width="800"
+                height="533" loading="lazy"></div>
+            <div class="exp-card__body">
+              <span class="exp-card__tag exp-card__tag--gastro">Dolci</span>
+              <h3 class="exp-card__title">Pasticciotto Leccese</h3>
+              <p class="exp-card__desc">Pasta frolla ripiena di crema pasticcera, inventato nel 1745 a Galatina. Il più
+                famoso: Bar Alvino in Piazza Sant'Oronzo, Lecce.</p>
+            </div>
+          </article>
+          <article class="exp-card">
+            <div class="exp-card__img"><img src="" alt="Rustico leccese caldo con sfoglia dorata" width="800"
+                height="533" loading="lazy"></div>
+            <div class="exp-card__body">
+              <span class="exp-card__tag exp-card__tag--gastro">Street food</span>
+              <h3 class="exp-card__title">Rustico Leccese</h3>
+              <p class="exp-card__desc">Due dischi di sfoglia ripieni di besciamella, mozzarella e pomodoro. Lo street
+                food salentino per eccellenza.</p>
+            </div>
+          </article>
+          <article class="exp-card">
+            <div class="exp-card__img"><img src="" alt="Puccia con olive cellina e ripieno di affettati" width="800"
+                height="533" loading="lazy"></div>
+            <div class="exp-card__body">
+              <span class="exp-card__tag exp-card__tag--gastro">Street food</span>
+              <h3 class="exp-card__title">Puccia</h3>
+              <p class="exp-card__desc">Pane con olive Cellina di Nardò, farcito a piacere. Street food salentino tipico
+                delle sagre e delle serate estive.</p>
+            </div>
+          </article>
+          <article class="exp-card">
+            <div class="exp-card__img"><img src="" alt="Caffè in ghiaccio con latte di mandorla in bicchiere alto"
+                width="800" height="533" loading="lazy"></div>
+            <div class="exp-card__body">
+              <span class="exp-card__tag exp-card__tag--gastro">Bevanda</span>
+              <h3 class="exp-card__title">Caffè in Ghiaccio con Latte di Mandorla</h3>
+              <p class="exp-card__desc">La bevanda estiva di Lecce: espresso freddo servito con latte di mandorla e
+                ghiaccio. Da gustare ogni mattina.</p>
+            </div>
+          </article>
+          <article class="exp-card">
+            <div class="exp-card__img"><img src="" alt="Scapece gallipolina in vassoio con zafferano" width="800"
+                height="533" loading="lazy"></div>
+            <div class="exp-card__body">
+              <span class="exp-card__tag exp-card__tag--gastro">Mare</span>
+              <h3 class="exp-card__title">Scapece Gallipolina</h3>
+              <p class="exp-card__desc">Pesce fritto conservato in aceto, zafferano e mollica. Antico metodo di
+                conservazione tipico di Gallipoli.</p>
+            </div>
+          </article>
+          <article class="exp-card">
+            <div class="exp-card__img"><img src="" alt="Frisella con pomodoro fresco, olio e origano" width="800"
+                height="533" loading="lazy"></div>
+            <div class="exp-card__body">
+              <span class="exp-card__tag exp-card__tag--gastro">Antipasto</span>
+              <h3 class="exp-card__title">Frisella</h3>
+              <p class="exp-card__desc">Ciambella biscottata ammollata in acqua di mare, condita con olio extravergine e
+                pomodoro fresco. Colazione estiva salentina.</p>
+            </div>
+          </article>
+          <article class="exp-card">
+            <div class="exp-card__img"><img src="" alt="Spumone salentino di mandorla tagliato a fette" width="800"
+                height="533" loading="lazy"></div>
+            <div class="exp-card__body">
+              <span class="exp-card__tag exp-card__tag--gastro">Dolci</span>
+              <h3 class="exp-card__title">Spumone Salentino</h3>
+              <p class="exp-card__desc">Gelato semifreddo di mandorla, tipico del Salento. Si trova nelle pasticcerie
+                tradizionali di Lecce e Galatina.</p>
+            </div>
+          </article>
+          <article class="exp-card">
+            <div class="exp-card__img"><img src="" alt="Ciceri e tria con pasta fritta e lessata con ceci" width="800"
+                height="533" loading="lazy"></div>
+            <div class="exp-card__body">
+              <span class="exp-card__tag exp-card__tag--gastro">Primo</span>
+              <h3 class="exp-card__title">Ciceri e Tria</h3>
+              <p class="exp-card__desc">Piatto antico di origine araba: pasta in parte fritta in parte lessata con ceci.
+                La cucina salentina nella sua forma più autentica.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- VINI -->
+    <section class="section" aria-labelledby="vini-title">
+      <div class="container">
+        <h2 class="section__title" id="vini-title">Vini del Salento</h2>
+        <div class="divider" aria-hidden="true"></div>
+        <div class="info-list">
+          <div class="info-list__item">
+            <div><strong>Primitivo di Manduria DOC/DOCG</strong> — Il grande rosso del Salento. Anche nella versione
+              Dolce Naturale DOCG.</div>
+          </div>
+          <div class="info-list__item">
+            <div><strong>Salice Salentino DOC</strong> — Da Negroamaro. Cantina Due Palme e Leone De Castris i
+              produttori di riferimento.</div>
+          </div>
+          <div class="info-list__item">
+            <div><strong>Negroamaro IGT Salento</strong> — Vitigno autoctono principe del Salento, versatile e di grande
+              carattere.</div>
+          </div>
+          <div class="info-list__item">
+            <div><strong>Susumaniello IGT</strong> — Vitigno rarissimo in via di riscoperta, con produzioni limitate e
+              molto ricercate.</div>
+          </div>
+          <div class="info-list__item">
+            <div><strong>Rosato del Salento</strong> — Fama internazionale, prodotto da Negroamaro. Colore buccia di
+              cipolla, fresco e beverino.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ESPERIENZE ARTIGIANALI -->
+    <section class="section section--alt" aria-labelledby="artig-title">
+      <div class="container">
+        <h2 class="section__title" id="artig-title">Esperienze Artigianali</h2>
+        <div class="divider" aria-hidden="true"></div>
+        <div class="info-list">
+          <div class="info-list__item">
+            <div><strong>Cartapesta Leccese</strong> — Arte secolare. Laboratori aperti ai turisti nel centro storico di
+              Lecce.</div>
+          </div>
+          <div class="info-list__item">
+            <div><strong>Pizzica e Danza</strong> — Scuole di ballo tradizionale aperte ai turisti con lezioni anche
+              brevi, a Lecce e Gallipoli.</div>
+          </div>
+          <div class="info-list__item">
+            <div><strong>Lavorazione della Pietra Leccese</strong> — Corsi e botteghe nel centro storico di Lecce. Si
+              può imparare l'intaglio in mezza giornata.</div>
+          </div>
+          <div class="info-list__item">
+            <div><strong>Ceramica di Cutrofiano</strong> — Argilla rossa locale lavorata in piccole botteghe artigiane
+              attive da secoli.</div>
+          </div>
+          <div class="info-list__item">
+            <div><strong>Frantoio Ipogeo di Gallipoli</strong> — XVI sec., uno dei meglio conservati d'Italia. Visita
+              guidata al ciclo di produzione dell'olio.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EVENTI -->
+    <section class="section" aria-labelledby="eventi-title">
+      <div class="container">
+        <h2 class="section__title" id="eventi-title">Eventi</h2>
+        <div class="divider" aria-hidden="true"></div>
+        <div class="info-list">
+          <div class="info-list__item">
+            <div><strong>Notte della Taranta</strong> (agosto, Melpignano) — Il più grande festival di musica popolare
+              d'Europa. Gran concertone finale con oltre 100.000 spettatori.</div>
+          </div>
+          <div class="info-list__item">
+            <div><strong>Luminarie di Lecce</strong> (dicembre/Natale) — Intere strade trasformate in tunnel di luce.
+              Tra le più famose d'Italia.</div>
+          </div>
+          <div class="info-list__item">
+            <div><strong>Carnevale di Gallipoli</strong> (febbraio) — Sfilate e maschere in costume nel centro storico
+              dell'isola.</div>
+          </div>
+          <div class="info-list__item">
+            <div><strong>Sagra dei Ciceri e Tria</strong> (agosto, Lecce) — Sagra del piatto simbolo leccese,
+              degustazioni e musica popolare.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== PIÈ DI PAGINA CON LINK DI NAVIGAZIONE E INFORMAZIONI GENERALI (FOOTER) ===== -->
+  <footer class="site-footer" aria-label="Piè di pagina">
+    <div class="container">
+      <div class="site-footer__grid">
+        <div class="site-footer__col">
+          <h2 class="site-footer__col-title">Link rapidi</h2>
+          <ul class="site-footer__list" role="list">
+            <li><a href="../../destinazioni/index.html" class="site-footer__link">Destinazioni</a></li>
+            <li><a href="../../esperienze/index.html" class="site-footer__link">Esperienze</a></li>
+            <li><a href="../../pianifica/index.html" class="site-footer__link">Pianifica</a></li>
+          </ul>
+        </div>
+        <div class="site-footer__col">
+          <h2 class="site-footer__col-title">Informazioni</h2>
+          <ul class="site-footer__list" role="list">
+            <li><a href="../../contatti/index.html" class="site-footer__link">Contatti</a></li>
+            <li><a href="../../contatti/index.html" class="site-footer__link">Accessibilità</a></li>
+            <li><a href="../../contatti/index.html" class="site-footer__link">Turismo sostenibile</a></li>
+            <li><a href="../../contatti/index.html" class="site-footer__link">Sitemap</a></li>
+          </ul>
+        </div>
+        <div class="site-footer__col">
+          <h2 class="site-footer__col-title">Aree geografiche</h2>
+          <ul class="site-footer__list" role="list">
+            <li><a href="../../destinazioni/gargano/index.html" class="site-footer__link">Gargano</a></li>
+            <li><a href="../../destinazioni/bari/index.html" class="site-footer__link">Bari</a></li>
+            <li><a href="../../destinazioni/bat/index.html" class="site-footer__link">BAT</a></li>
+            <li><a href="../../destinazioni/taranto/index.html" class="site-footer__link">Taranto</a></li>
+            <li><a href="../../destinazioni/brindisi/index.html" class="site-footer__link">Brindisi</a></li>
+            <li><a href="../../destinazioni/salento/index.html" class="site-footer__link">Salento</a></li>
+          </ul>
+        </div>
+        <div class="site-footer__col">
+          <a href="../../index.html" class="site-footer__logo">Puglia</a>
+          <p class="site-footer__tagline">Puglia. Dove il Sud diventa leggenda.</p>
+        </div>
+      </div>
+      <div class="site-footer__bottom">
+        <p>© 2025–2026 Vivere la Puglia</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== CARICAMENTO DELLO SCRIPT COMPORTAMENTALE DEL CAROSELLO (JAVASCRIPT SLIDER) ===== -->
+  <script src="../../assets/js/slider.js"></script>
+</body>
+
+</html>

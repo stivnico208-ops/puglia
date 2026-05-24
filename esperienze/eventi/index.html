@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<!-- ===== INIZIO INTESTAZIONE DI METADATI (HEAD) ===== -->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eventi in Puglia — Tradizione, Spettacolo e Cultura | Puglia Turismo</title>
+  <meta name="description"
+    content="Scopri tutti gli eventi in Puglia: Notte della Taranta, Carnevale di Putignano, Disfida di Barletta, Red Bull Cliff Diving e le feste patronali più suggestive.">
+  <meta property="og:title" content="Eventi in Puglia — Tradizione, Spettacolo e Cultura | Puglia Turismo">
+  <meta property="og:description"
+    content="Dai festival musicali internazionali alle rievocazioni storiche e ai tuffi da altezze record, scopri gli eventi imperdibili in Puglia.">
+  <meta property="og:type" content="website">
+  <link rel="canonical" href="https://example.com/esperienze/eventi/">
+  <link rel="stylesheet" href="../../assets/css/main.css">
+  <link rel="stylesheet" href="../../assets/css/components.css">
+  <link rel="icon" href="../../../favicon.png" type="image/png">
+</head>
+
+<!-- ===== CORPO DELLA PAGINA (BODY) ===== -->
+
+<body>
+
+  <!-- ===== AGGANCIO LOGICA MENU MOBILE (CHECKBOX HIDDEN PER TOGGLE) ===== -->
+  <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-hidden="true">
+
+  <!-- ===== INTESTAZIONE SITO E NAVIGAZIONE PRINCIPALE (HEADER) ===== -->
+  <header class="site-header" aria-label="Intestazione sito">
+    <div class="container">
+      <a href="../../index.html" class="site-logo">Puglia</a>
+      <nav class="site-nav" aria-label="Navigazione principale">
+        <ul class="site-nav__list" role="list">
+          <li><a href="../../destinazioni/index.html" class="site-nav__link">Destinazioni</a></li>
+          <li><a href="../../esperienze/index.html" class="site-nav__link site-nav__link--active">Esperienze</a></li>
+          <li><a href="../../pianifica/index.html" class="site-nav__link">Pianifica</a></li>
+          <li><a href="../../contatti/index.html" class="site-nav__link">Contatti</a></li>
+        </ul>
+      </nav>
+      <label for="nav-toggle" class="nav-toggle-label"
+        aria-label="Apri/chiudi menu"><span></span><span></span><span></span></label>
+    </div>
+  </header>
+
+  <!-- ===== NAVIGAZIONE COLLASSABILE PER DISPOSITIVI MOBILE (MOBILE NAV OVERLAY) ===== -->
+  <nav class="mobile-nav" aria-label="Menu mobile">
+    <ul class="mobile-nav__list" role="list">
+      <li><a href="../../destinazioni/index.html" class="mobile-nav__link">Destinazioni</a></li>
+      <li><a href="../../esperienze/index.html" class="mobile-nav__link">Esperienze</a></li>
+      <li><a href="../../pianifica/index.html" class="mobile-nav__link">Pianifica</a></li>
+      <li><a href="../../contatti/index.html" class="mobile-nav__link">Contatti</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===== CONTENUTO PRINCIPALE DELLA PAGINA (MAIN CONTENT) ===== -->
+  <main id="main-content">
+
+    <!-- ===== COPERTINA DI BENVENUTO / SEZIONE INIZIALE (HERO) ===== -->
+    <section class="hero hero--page" aria-labelledby="page-title">
+      <div class="hero__overlay"></div>
+      <div class="hero__content">
+        <div class="container">
+          <h1 class="hero__title" id="page-title">Eventi in Puglia</h1>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== INTRO ===== -->
+    <section class="section section--sm">
+      <div class="container">
+        <p class="page-intro">La Puglia è un palcoscenico a cielo aperto. Dai festival di risonanza internazionale
+          dedicati alla musica popolare e all'opera lirica, alle rievocazioni storiche medievali che fanno rivivere le
+          antiche gesta, fino agli eventi sportivi spettacolari sulle scogliere adriatiche: la Puglia regala forti
+          emozioni ed esperienze autentiche in ogni stagione.</p>
+      </div>
+    </section>
+
+    <!-- ===== GRIGLIA EVENTI PRINCIPALI ===== -->
+    <section class="section section--alt" aria-labelledby="principali-title">
+      <div class="container">
+        <h2 class="section__title" id="principali-title">I Grandi Eventi</h2>
+        <div class="divider" aria-hidden="true"></div>
+
+        <div class="exp-grid">
+
+          <!-- Evento 1: La Notte della Taranta -->
+          <article class="exp-card">
+            <div class="exp-card__img">
+              <img src="../../assets/img/eventi/notte-taranta.jpg"
+                alt="Migliaia di persone ballano la pizzica al concerto finale della Notte della Taranta a Melpignano"
+                width="800" height="533" loading="lazy">
+            </div>
+            <div class="exp-card__body">
+              <span class="exp-card__tag exp-card__tag--eventi">Musica & Folklore</span>
+              <h3 class="exp-card__title">La Notte della Taranta</h3>
+              <p class="exp-card__desc">Il più grande festival di musica popolare d'Europa, dedicato alla pizzica
+                salentina. Un itinerario estivo che attraversa la Grecia Salentina e culmina nel leggendario Concertone
+                finale di Melpignano sotto le stelle.</p>
+              <span class="exp-card__link">Agosto · Melpignano (LE)</span>
+            </div>
+          </article>
+
+          <!-- Evento 2: Red Bull Cliff Diving -->
+          <article class="exp-card">
+            <div class="exp-card__img">
+              <img src="../../assets/img/eventi/redbull-cliff-diving.jpg"
+                alt="Un atleta si tuffa nel vuoto dalla terrazza a strapiombo sulle scogliere di Polignano a Mare"
+                width="800" height="533" loading="lazy">
+            </div>
+            <div class="exp-card__body">
+              <span class="exp-card__tag exp-card__tag--mare">Sport</span>
+              <h3 class="exp-card__title">Red Bull Cliff Diving</h3>
+              <p class="exp-card__desc">La capitale mondiale dei tuffi da grandi altezze. Gli atleti più forti del
+                pianeta si lanciano da piattaforme montate su scogliere a 27 metri d'altezza, volando sopra le celebri
+                acque turchesi e cristalline di Polignano a Mare.</p>
+              <span class="exp-card__link">Settembre · Polignano a Mare (BA)</span>
+            </div>
+          </article>
+
+          <!-- Evento 3: Carnevale di Putignano -->
+          <article class="exp-card">
+            <div class="exp-card__img">
+              <img src="../../assets/img/eventi/carnevale-putignano.jpg"
+                alt="Enormi carri allegorici di cartapesta sfilano tra la folla festante al Carnevale di Putignano"
+                width="800" height="533" loading="lazy">
+            </div>
+            <div class="exp-card__body">
+              <span class="exp-card__tag exp-card__tag--borghi">Tradizione</span>
+              <h3 class="exp-card__title">Carnevale di Putignano</h3>
+              <p class="exp-card__desc">Uno dei carnevali più antichi d'Europa (dal 1394) e il più lungo del mondo. Le
+                sue maestose e spettacolari sfilate mettono in scena capolavori di cartapesta creati dai maestri
+                artigiani locali, in un turbine di ironia e folklore.</p>
+              <span class="exp-card__link">Gennaio–Febbraio · Putignano (BA)</span>
+            </div>
+          </article>
+
+          <!-- Evento 4: Disfida di Barletta -->
+          <article class="exp-card">
+            <div class="exp-card__img">
+              <img src="../../assets/img/eventi/disfida-barletta.jpg"
+                alt="Cavalieri in armatura medievale con bandiere e scudi durante la rievocazione della Disfida di Barletta"
+                width="800" height="533" loading="lazy">
+            </div>
+            <div class="exp-card__body">
+              <span class="exp-card__tag exp-card__tag--cultura">Rievocazione</span>
+              <h3 class="exp-card__title">Disfida di Barletta</h3>
+              <p class="exp-card__desc">La celebrazione del celebre scontro d'armi avvenuto nel 1503 tra 13 cavalieri
+                italiani e 13 francesi. Il borgo di Barletta torna indietro nel tempo con sfilate in costume storico,
+                mercati medievali e la spettacolare giostra equestre.</p>
+              <span class="exp-card__link">1–14 Settembre · Barletta (BAT)</span>
+            </div>
+          </article>
+
+          <!-- Evento 5: Festival della Valle d'Itria -->
+          <article class="exp-card">
+            <div class="exp-card__img">
+              <img src="../../assets/img/eventi/festival-valle-itria.jpg"
+                alt="Concerto di opera lirica nel cortile illuminato del Palazzo Ducale di Martina Franca" width="800"
+                height="533" loading="lazy">
+            </div>
+            <div class="exp-card__body">
+              <span class="exp-card__tag exp-card__tag--benessere">Musica Classica</span>
+              <h3 class="exp-card__title">Festival della Valle d'Itria</h3>
+              <p class="exp-card__desc">Un festival lirico di rilievo internazionale. Nel suggestivo cortile del Palazzo
+                Ducale di Martina Franca e nei chiostri dei borghi limitrofi, si riaccende l'emozione dell'opera e della
+                musica da camera in cornici architettoniche barocche.</p>
+              <span class="exp-card__link">Luglio–Agosto · Martina Franca (TA)</span>
+            </div>
+          </article>
+
+          <!-- Evento 6: Festa di San Nicola -->
+          <article class="exp-card">
+            <div class="exp-card__img">
+              <img src="../../assets/img/eventi/festa-san-nicola.jpg"
+                alt="La statua di San Nicola portata in processione su una barca nel porto di Bari illuminato dai fuochi artificiali"
+                width="800" height="533" loading="lazy">
+            </div>
+            <div class="exp-card__body">
+              <span class="exp-card__tag exp-card__tag--cultura">Fede & Folklore</span>
+              <h3 class="exp-card__title">Festa di San Nicola</h3>
+              <p class="exp-card__desc">La solenne festa patronale che attira fedeli da tutto il mondo. Il suggestivo
+                corteo storico che narra la traslazione delle reliquie del Santo, la spettacolare processione di barche
+                in mare e le spettacolari esibizioni delle Frecce Tricolori.</p>
+              <span class="exp-card__link">7–9 Maggio · Bari</span>
+            </div>
+          </article>
+
+          <!-- Evento 7: La Notte dei Falò e della Fòcara -->
+          <article class="exp-card">
+            <div class="exp-card__img">
+              <img src="../../assets/img/eventi/focara.jpg"
+                alt="Un enorme falò di fascine di vite brucia nella notte sprigionando scintille e fiamme altissime"
+                width="800" height="533" loading="lazy">
+            </div>
+            <div class="exp-card__body">
+              <span class="exp-card__tag exp-card__tag--natura">Tradizione</span>
+              <h3 class="exp-card__title">La Notte dei Falò e la Fòcara</h3>
+              <p class="exp-card__desc">Riti del fuoco ancestrali legati a Sant'Antonio Abate. A Novoli viene accesa una
+                gigantesca pira di tralci di vite alta 25 metri, mentre a Castellana Grotte si celebrano i tradizionali
+                Falò (i Fanove), in una notte ricca di calore, cibo di strada e musica.</p>
+              <span class="exp-card__link">Gennaio · Novoli (LE) & Castellana (BA)</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTATTI / INFORMAZIONI GENERALI ===== -->
+    <section class="section" aria-labelledby="info-title">
+      <div class="container">
+        <h2 class="section__title" id="info-title">Vuoi partecipare a un evento?</h2>
+        <div class="divider" aria-hidden="true"></div>
+        <p style="max-width: 75ch; line-height: 1.6; margin-bottom: var(--space-4);">Molti dei grandi eventi
+          tradizionali all'aperto (pizzica, feste patronali, sfilate storiche) sono a **ingresso libero e gratuito**.
+          Per festival musicali o sedili riservati durante il Carnevale e la Disfida, ti consigliamo di acquistare i
+          biglietti online sul nostro portale o sui canali ufficiali con diversi mesi di anticipo per assicurarti i
+          posti migliori.</p>
+        <a href="../../contatti/index.html" class="btn btn--primary">Richiedi Informazioni</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== PIÈ DI PAGINA CON LINK DI NAVIGAZIONE E INFORMAZIONI GENERALI (FOOTER) ===== -->
+  <footer class="site-footer" aria-label="Piè di pagina">
+    <div class="container">
+      <div class="site-footer__grid">
+        <div class="site-footer__col">
+          <h2 class="site-footer__col-title">Link rapidi</h2>
+          <ul class="site-footer__list" role="list">
+            <li><a href="../../destinazioni/index.html" class="site-footer__link">Destinazioni</a></li>
+            <li><a href="../../esperienze/index.html" class="site-footer__link">Esperienze</a></li>
+            <li><a href="../../pianifica/index.html" class="site-footer__link">Pianifica</a></li>
+          </ul>
+        </div>
+        <div class="site-footer__col">
+          <h2 class="site-footer__col-title">Informazioni</h2>
+          <ul class="site-footer__list" role="list">
+            <li><a href="../../contatti/index.html" class="site-footer__link">Contatti</a></li>
+            <li><a href="../../contatti/index.html" class="site-footer__link">Accessibilità</a></li>
+            <li><a href="../../contatti/index.html" class="site-footer__link">Turismo sostenibile</a></li>
+            <li><a href="../../contatti/index.html" class="site-footer__link">Sitemap</a></li>
+          </ul>
+        </div>
+        <div class="site-footer__col">
+          <h2 class="site-footer__col-title">Aree geografiche</h2>
+          <ul class="site-footer__list" role="list">
+            <li><a href="../../destinazioni/gargano/index.html" class="site-footer__link">Gargano</a></li>
+            <li><a href="../../destinazioni/bari/index.html" class="site-footer__link">Bari</a></li>
+            <li><a href="../../destinazioni/bat/index.html" class="site-footer__link">BAT</a></li>
+            <li><a href="../../destinazioni/taranto/index.html" class="site-footer__link">Taranto</a></li>
+            <li><a href="../../destinazioni/brindisi/index.html" class="site-footer__link">Brindisi</a></li>
+            <li><a href="../../destinazioni/salento/index.html" class="site-footer__link">Salento</a></li>
+          </ul>
+        </div>
+        <div class="site-footer__col">
+          <a href="../../index.html" class="site-footer__logo">Puglia</a>
+          <p class="site-footer__tagline">Puglia. Dove il Sud diventa leggenda.</p>
+        </div>
+      </div>
+      <div class="site-footer__bottom">
+        <p>© 2025–2026 Puglia Turismo. Tutti i diritti riservati.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== CARICAMENTO DELLO SCRIPT COMPORTAMENTALE DEL CAROSELLO (JAVASCRIPT SLIDER) ===== -->
+  <script src="../../assets/js/slider.js"></script>
+</body>
+
+</html>

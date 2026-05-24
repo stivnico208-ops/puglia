@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<!-- ===== INIZIO INTESTAZIONE DI METADATI (HEAD) ===== -->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pianifica il Tuo Viaggio in Puglia | Puglia Turismo</title>
+  <meta name="description"
+    content="Come arrivare in Puglia, quando venire, mobilità interna, app utili e consigli pratici per organizzare il viaggio perfetto nella regione più autentica del Mediterraneo.">
+  <meta property="og:title" content="Pianifica il Tuo Viaggio in Puglia | Puglia Turismo">
+  <meta property="og:description"
+    content="Come arrivare in Puglia, quando venire, trasporti interni e consigli pratici per il tuo viaggio.">
+  <meta property="og:type" content="website">
+  <link rel="canonical" href="https://example.com/pianifica/">
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <link rel="stylesheet" href="../assets/css/components.css">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <link rel="icon" href="../../favicon.png" type="image/png">
+</head>
+
+<!-- ===== CORPO DELLA PAGINA (BODY) ===== -->
+
+<body>
+
+  <!-- ===== AGGANCIO LOGICA MENU MOBILE (CHECKBOX HIDDEN PER TOGGLE) ===== -->
+  <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-hidden="true">
+
+  <!-- ===== INTESTAZIONE SITO E NAVIGAZIONE PRINCIPALE (HEADER) ===== -->
+  <header class="site-header" aria-label="Intestazione sito">
+    <div class="container">
+      <a href="../index.html" class="site-logo">Puglia</a>
+      <nav class="site-nav" aria-label="Navigazione principale">
+        <ul class="site-nav__list" role="list">
+          <li><a href="../destinazioni/index.html" class="site-nav__link">Destinazioni</a></li>
+          <li><a href="../esperienze/index.html" class="site-nav__link">Esperienze</a></li>
+          <li><a href="../pianifica/index.html" class="site-nav__link site-nav__link--active">Pianifica</a></li>
+          <li><a href="../contatti/index.html" class="site-nav__link">Contatti</a></li>
+        </ul>
+      </nav>
+      <label for="nav-toggle" class="nav-toggle-label"
+        aria-label="Apri/chiudi menu"><span></span><span></span><span></span></label>
+    </div>
+  </header>
+
+  <!-- ===== NAVIGAZIONE COLLASSABILE PER DISPOSITIVI MOBILE (MOBILE NAV OVERLAY) ===== -->
+  <nav class="mobile-nav" aria-label="Menu mobile">
+    <ul class="mobile-nav__list" role="list">
+      <li><a href="../destinazioni/index.html" class="mobile-nav__link">Destinazioni</a></li>
+      <li><a href="../esperienze/index.html" class="mobile-nav__link">Esperienze</a></li>
+      <li><a href="../pianifica/index.html" class="mobile-nav__link">Pianifica</a></li>
+      <li><a href="../contatti/index.html" class="mobile-nav__link">Contatti</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===== CONTENUTO PRINCIPALE DELLA PAGINA (MAIN CONTENT) ===== -->
+  <main id="main-content">
+
+    <!-- ===== HERO ===== -->
+    <!-- ===== COPERTINA DI BENVENUTO / SEZIONE INIZIALE (HERO) ===== -->
+    <section class="hero hero--page" aria-labelledby="page-title">
+      <div class="hero__overlay"></div>
+      <div class="hero__content">
+        <div class="container">
+
+          <h1 class="hero__title" id="page-title">Pianifica il Tuo Viaggio in Puglia</h1>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== QUANDO VENIRE ===== -->
+    <section class="section" aria-labelledby="quando-title">
+      <div class="container">
+        <h2 class="section__title" id="quando-title">Quando Venire</h2>
+        <div class="divider" aria-hidden="true"></div>
+        <div class="season-grid">
+          <article class="season-card">
+            <h3 class="season-card__title"><span class="material-symbols-outlined">local_florist</span> Maggio–Giugno
+            </h3>
+            <p>Periodo ideale per il mare senza folla. Temperature miti (25–28°C), prezzi ancora bassi. Fioritura dei
+              campi di grano e papaveri.</p>
+          </article>
+          <article class="season-card season-card--estate">
+            <h3 class="season-card__title"><span class="material-symbols-outlined">sunny</span> Luglio–Agosto
+            </h3>
+            <p>Alta stagione balneare. Mare splendido, spiagge vivaci. Ricca programmazione eventi: Notte della Taranta,
+              Disfida di Barletta, Festival della Valle d'Itria.</p>
+          </article>
+          <article class="season-card season-card--autunno">
+            <h3 class="season-card__title"><span class="material-symbols-outlined">wine_bar</span> Settembre–Ottobre
+            </h3>
+            <p>Il mese d'oro. Mare ancora caldo (24–26°C), spiagge quasi libere, prezzi ragionevoli. Raccolta uva e
+              inizio olive.</p>
+          </article>
+          <article class="season-card season-card--inverno">
+            <h3 class="season-card__title"><span class="material-symbols-outlined">ac_unit</span> Novembre–Aprile</h3>
+            <p>Turismo culturale e gastronomico. Siti UNESCO senza folla. Luminarie di Lecce a Natale. Frangitura
+              dell'olio nelle masserie.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== COME ARRIVARE ===== -->
+    <section class="section section--alt" aria-labelledby="arrivare-title">
+      <div class="container">
+        <h2 class="section__title" id="arrivare-title">Come Arrivare</h2>
+        <div class="divider" aria-hidden="true"></div>
+
+        <!-- In aereo -->
+        <div class="subsection">
+          <h3 class="subsection__title"><span class="material-symbols-outlined">travel</span> In Aereo</h3>
+          <div class="info-list">
+
+            <div class="info-list__item">
+              <div>
+                <a href="https://www.aeroportidipuglia.it/bari" class="info-list__link" target="_blank"
+                  rel="noopener noreferrer"><strong>Aeroporto di Bari Karol Wojtyla (BRI)</strong></a> — Principale
+                scalo pugliese, 8 milioni di passeggeri/anno.<br>
+                <span style="font-size:var(--text-small);color:#666;">Bus Tempesta ogni 30 min (5 €) / Taxi 20–25 €.
+                  Collegato con tutti i principali aeroporti italiani ed europei.</span>
+              </div>
+            </div>
+
+            <div class="info-list__item">
+              <div>
+                <a href="https://www.aeroportidipuglia.it/brindisi" class="info-list__link" target="_blank"
+                  rel="noopener noreferrer"><strong>Aeroporto di Brindisi Salento (BDS)</strong></a> — Secondo scalo,
+                serve il Salento.<br>
+                <span style="font-size:var(--text-small);color:#666;">Bus STP per Lecce 45 min (7 €) / Taxi circa 40 €.
+                  Voli da Milano, Roma, Torino, Bergamo.</span>
+              </div>
+            </div>
+
+            <div class="info-list__item">
+              <div>
+                <a href="https://www.aeroportidipuglia.it/foggia" class="info-list__link" target="_blank"
+                  rel="noopener noreferrer"><strong>Aeroporto di Foggia Gino Lisa (FOG)</strong></a> — Voli nazionali e
+                stagionali per il Gargano.<br>
+                <span style="font-size:var(--text-small);color:#666;">Servizio limitato; per il Gargano è spesso più
+                  conveniente arrivare a Bari e noleggiare un'auto.</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- In treno -->
+        <div class="subsection">
+          <h3 class="subsection__title"><span class="material-symbols-outlined">train</span> In Treno</h3>
+          <div class="info-list">
+            <div class="info-list__item">
+              <p><a href="https://www.trenitalia.com" class="info-list__link" target="_blank"
+                  rel="noopener noreferrer"><strong>Cerca e prenota su Trenitalia</strong></a></p>
+            </div>
+            <div class="info-list__item">
+              <p><a href="https://www.fseonline.it" class="info-list__link" target="_blank"
+                  rel="noopener noreferrer"><strong>Ferrovie del Sud Est</strong></a> — Lecce–Otranto, Lecce–Gallipoli,
+                Lecce–Maglie</p>
+            </div>
+            <div class="info-list__item">
+              <p><a href="https://www.ferroviedelgargano.com" class="info-list__link" target="_blank"
+                  rel="noopener noreferrer"><strong>Ferrovie del Gargano</strong></a> — Foggia–Peschici (panoramico,
+                lento ma spettacolare)</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- In auto -->
+        <div class="subsection">
+          <h3 class="subsection__title"><span class="material-symbols-outlined">directions_car</span> In Auto</h3>
+          <div class="info-list">
+            <div class="info-list__item">
+              <p><a href="https://www.google.com/maps/dir/?api=1&destination=Puglia,Italy&travelmode=driving"
+                  class="info-list__link" target="_blank" rel="noopener noreferrer"><strong>Apri itinerario verso la
+                    Puglia su Google Maps</strong></a></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- ===== MOBILITÀ INTERNA ===== -->
+        <section class="section" aria-labelledby="mobilita-title">
+          <div class="container">
+            <h2 class="section__title" id="mobilita-title">Mobilità Interna</h2>
+            <div class="divider" aria-hidden="true"></div>
+            <div class="info-list">
+
+              <div class="info-list__item">
+                <div><strong>Auto a noleggio</strong> — Consigliata per masserie, calette isolate, borghi
+                  dell'entroterra.
+                  Disponibile in tutti gli aeroporti.</div>
+              </div>
+
+              <div class="info-list__item">
+                <div><strong>Treno regionale</strong> — Ottimo per Bari–Lecce e Bari–Taranto. Prenota su <a
+                    href="https://www.trenitalia.com" class="info-list__link" target="_blank"
+                    rel="noopener noreferrer"><strong>trenitalia.com</strong></a>.</div>
+              </div>
+
+              <div class="info-list__item">
+                <div><strong>Bus regionali</strong> — <a href="https://www.sitasudtrasporti.it" class="info-list__link"
+                    target="_blank" rel="noopener noreferrer"><strong>SITA</strong></a>, <a
+                    href="https://www.ctpbari.it" class="info-list__link" target="_blank"
+                    rel="noopener noreferrer"><strong>CTP</strong></a>, <a href="https://www.fseonline.it"
+                    class="info-list__link" target="_blank" rel="noopener noreferrer"><strong>FSE</strong></a> (Ferrovie
+                  del Sud Est). Coprono tutti i comuni
+                  principali.</div>
+              </div>
+
+              <div class="info-list__item">
+                <div><strong>Bici e ciclovia</strong> — <a href="https://www.cicloviadellaqueductopugliese.it"
+                    class="info-list__link" target="_blank" rel="noopener noreferrer"><strong>Ciclovia dell'Acquedotto
+                      Pugliese</strong></a> (500 km). Il Salento è pianeggiante e perfetto per il cicloturismo.</div>
+              </div>
+
+              <div class="info-list__item">
+                <div><strong>Taxi e NCC</strong> — Disponibili in tutte le città. Consigliato prenotare in anticipo in
+                  alta
+                  stagione.</div>
+              </div>
+
+              <div class="info-list__item">
+                <div><strong>E-bike e scooter</strong> — Noleggio disponibile a Lecce, Gallipoli, Bari, Vieste.</div>
+              </div>
+
+              <div class="info-list__item">
+                <div><strong>Aliscafo per Isole Tremiti</strong> — Da Vieste, Peschici e Rodi Garganico. Prenota su <a
+                    href="https://www.navlib.it" class="info-list__link" target="_blank"
+                    rel="noopener noreferrer"><strong>navlib.it</strong></a> (servizio stagionale maggio–settembre).
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+        <!-- ===== APP E RISORSE ===== -->
+        <section class="section section--alt" aria-labelledby="app-title">
+          <div class="container">
+            <h2 class="section__title" id="app-title">App e Risorse Utili</h2>
+            <div class="divider" aria-hidden="true"></div>
+            <div class="info-list">
+
+              <div class="info-list__item">
+                <p><a href="https://www.viaggiareinpuglia.it" class="info-list__link" target="_blank"
+                    rel="noopener noreferrer"><strong>viaggiareinpuglia.it</strong></a> — Sito ufficiale di Puglia
+                  Promozione con eventi, itinerari e strutture ricettive</p>
+              </div>
+
+              <div class="info-list__item">
+                <p><a href="https://www.trenitalia.com" class="info-list__link" target="_blank"
+                    rel="noopener noreferrer"><strong>trenitalia.com</strong></a> / <a href="https://www.italotreno.it"
+                    class="info-list__link" target="_blank" rel="noopener noreferrer"><strong>italotreno.it</strong></a>
+                  —
+                  Prenotazione treni alta velocità e regionali</p>
+              </div>
+
+              <div class="info-list__item">
+                <p><a href="https://www.fseonline.it" class="info-list__link" target="_blank"
+                    rel="noopener noreferrer"><strong>fseonline.it</strong></a> — Ferrovie del Sud Est per Lecce,
+                  Gallipoli,
+                  Otranto, Maglie</p>
+              </div>
+
+              <div class="info-list__item">
+                <p><a href="https://www.grottecastellana.it" class="info-list__link" target="_blank"
+                    rel="noopener noreferrer"><strong>grottecastellana.it</strong></a> — Prenotazione visite guidate
+                  alle
+                  Grotte di Castellana</p>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+        <!-- ===== CONSIGLI PRATICI ===== -->
+        <section class="section" aria-labelledby="consigli-title">
+          <div class="container">
+            <h2 class="section__title" id="consigli-title">Consigli Pratici</h2>
+            <div class="divider" aria-hidden="true"></div>
+            <div class="info-list">
+              <div class="info-list__item">
+                <p><strong>Prenotazioni in alta stagione:</strong> 2–3 mesi di anticipo per masserie, strutture costiere
+                  e
+                  agriturismi di qualità</p>
+              </div>
+              <div class="info-list__item">
+                <p><strong>Vestiario per le chiese:</strong> coprire spalle e gambe per accedere alle cattedrali
+                  (foulard o
+                  pareo sempre utile)</p>
+              </div>
+              <div class="info-list__item">
+                <p><strong>Orari estivi:</strong> molte attività chiudono 13:00–17:00. Pianificare le visite in
+                  mattinata o
+                  tardo pomeriggio</p>
+              </div>
+              <div class="info-list__item">
+                <p><strong>Gastronomia autentica:</strong> chiedere sempre la "cucina casareccia" o il "piatto del
+                  giorno"
+                  per le proposte più genuine</p>
+              </div>
+              <div class="info-list__item">
+                <p><strong>Olio extravergine:</strong> acquistare direttamente nelle masserie e nei frantoi, non al
+                  supermercato. La qualità è incomparabile</p>
+              </div>
+            </div>
+
+            <div class="info-box" style="margin-top:var(--space-6);">
+              <p class="info-box__title">Consigli per le spiagge protette</p>
+              <p>Alcune spiagge (Porto Selvaggio, Torre Guaceto, Baia dei Turchi) hanno accesso a numero contingentato.
+                Arrivare presto al mattino o verificare se è necessaria prenotazione online.</p>
+            </div>
+          </div>
+        </section>
+
+  </main>
+
+  <!-- ===== PIÈ DI PAGINA CON LINK DI NAVIGAZIONE E INFORMAZIONI GENERALI (FOOTER) ===== -->
+  <footer class="site-footer" aria-label="Piè di pagina">
+    <div class="container">
+      <div class="site-footer__grid">
+        <div class="site-footer__col">
+          <h2 class="site-footer__col-title">Link rapidi</h2>
+          <ul class="site-footer__list" role="list">
+            <li><a href="../destinazioni/index.html" class="site-footer__link">Destinazioni</a></li>
+            <li><a href="../esperienze/index.html" class="site-footer__link">Esperienze</a></li>
+            <li><a href="../pianifica/index.html" class="site-footer__link">Pianifica</a></li>
+            <li><a href="../contatti/index.html" class="site-footer__link">Contatti</a></li>
+          </ul>
+        </div>
+        <div class="site-footer__col">
+          <h2 class="site-footer__col-title">Informazioni</h2>
+          <ul class="site-footer__list" role="list">
+            <li><a href="../contatti/index.html" class="site-footer__link">Contatti</a></li>
+            <li><a href="../contatti/index.html" class="site-footer__link">Accessibilità</a></li>
+            <li><a href="../contatti/index.html" class="site-footer__link">Turismo sostenibile</a></li>
+            <li><a href="../contatti/index.html" class="site-footer__link">Sitemap</a></li>
+          </ul>
+        </div>
+        <div class="site-footer__col">
+          <h2 class="site-footer__col-title">Aree geografiche</h2>
+          <ul class="site-footer__list" role="list">
+            <li><a href="../destinazioni/gargano/index.html" class="site-footer__link">Gargano</a></li>
+            <li><a href="../destinazioni/bari/index.html" class="site-footer__link">Bari</a></li>
+            <li><a href="../destinazioni/bat/index.html" class="site-footer__link">BAT</a></li>
+            <li><a href="../destinazioni/taranto/index.html" class="site-footer__link">Taranto</a></li>
+            <li><a href="../destinazioni/brindisi/index.html" class="site-footer__link">Brindisi</a></li>
+            <li><a href="../destinazioni/salento/index.html" class="site-footer__link">Salento</a></li>
+          </ul>
+        </div>
+        <div class="site-footer__col">
+          <a href="../index.html" class="site-footer__logo">Puglia</a>
+          <p class="site-footer__tagline">Puglia. Dove il Sud diventa leggenda.</p>
+        </div>
+      </div>
+      <div class="site-footer__bottom">
+        <p>© 2025–2026 Puglia Turismo. Tutti i diritti riservati.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== CARICAMENTO DELLO SCRIPT COMPORTAMENTALE DEL CAROSELLO (JAVASCRIPT SLIDER) ===== -->
+  <script src="../assets/js/slider.js"></script>
+</body>
+
+</html>
